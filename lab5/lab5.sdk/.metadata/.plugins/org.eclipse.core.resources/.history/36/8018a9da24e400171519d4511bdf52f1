@@ -1,0 +1,241 @@
+//pingpong template file for ECE530 Lab #6
+//Pingpong game by Keith Hoover
+//Version 2 to use loops and arrays
+//Revised by Jianjian Song to add pressing early penalty, 3-23-2016
+#include "xparameters.h"
+#include "xgpio.h"
+#include "led_ip.h"
+// Include scutimer header file
+#include "XScuTimer.h"
+//====================================================
+XScuTimer Timer; /* Cortex A9 SCU Private Timer Instance */
+void delay(void);
+void MoveBallRight(void);
+void MoveBallLeft(void);
+
+#define ONE_TENTH 32500000 // half of the CPU clock speed/10
+#define START 1
+#define STOP 0
+#define LEFT 0
+#define RIGHT 1
+#define RESETBUTTON 0b0100
+#define STARTBUTTON 0b0010
+#define LEFTPADDLE 0b1000
+#define RIGHTPADDLE 0b0001
+
+int psb_check, dip_check, dip_check_prev, LedState, Status, count;
+XGpio dip, push;
+// PS Timer related definitions
+XScuTimer_Config *ConfigPtr;
+XScuTimer *TimerInstancePtr = &Timer;
+int LED_PATTERNS[4] = { 0b1000, 0b0100, 0b0010, 0b0001 };
+int scoreright, scoreleft;
+char GameOver, StartDirection;
+int main(void) {
+	unsigned int i;
+	int pressed;
+
+	//initialize variables, timers, ports
+	xil_printf("-- Start of the Ping Pong Program --\r\n");
+	GameOver = STOP;
+	scoreright = 0;
+	scoreleft = 0;
+	xil_printf("Score Left = %d   Score Right = %d\r\n", scoreleft, scoreright);
+	StartDirection = LEFT;
+
+	// PS Timer related definitions
+	XScuTimer_Config *ConfigPtr;
+	XScuTimer *TimerInstancePtr = &Timer;
+
+	XGpio_Initialize(&dip, XPAR_SWITCHES_DEVICE_ID);
+	XGpio_SetDataDirection(&dip, 1, 0xffffffff);
+
+	XGpio_Initialize(&push, XPAR_BUTTONS_DEVICE_ID);
+	XGpio_SetDataDirection(&push, 1, 0xffffffff);
+
+	// Initialize the timer
+	ConfigPtr = XScuTimer_LookupConfig(XPAR_PS7_SCUTIMER_0_DEVICE_ID);
+	Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+			ConfigPtr->BaseAddr);
+	if (Status != XST_SUCCESS) {
+		xil_printf("Timer init() failed\r\n");
+		return XST_FAILURE;
+	}
+	scoreleft = 0;
+	scoreright = 0;
+
+	while (1) {
+		// Read push buttons and reset score if Button 2 is pressed
+		psb_check = XGpio_DiscreteRead(&push, 1);
+		if (psb_check == RESETBUTTON)	//reset game
+				{
+			xil_printf("\n\rNew Game - Scores Reset\r\n");
+			GameOver = STOP;
+			scoreleft = 0;
+			scoreright = 0;
+			pressed =0;
+		}
+
+		if (psb_check == STARTBUTTON) {
+			GameOver = START;	//start game
+			xil_printf("\n\rGame Start!\r\n");
+			pressed=0;
+		}
+		if (GameOver == START) {
+			//start the game and follow StartDirection}
+			if (StartDirection == LEFT) {
+				delay();
+				MoveBallRight();
+			} else {
+				delay();
+				MoveBallLeft();
+			}
+		}
+	}
+} //main()
+
+void MoveBallRight(void) {
+	char i, EarlyPress, leftResult, rightResult;
+	EarlyPress = 0;
+	count = 0;
+	int pressed=0;
+	//move LED to the right
+	while (1) {
+		psb_check = XGpio_DiscreteRead(&push, 1);
+		dip_check = XGpio_DiscreteRead(&dip, 1);
+		if (dip_check != dip_check_prev) {
+			xil_printf("DIP Switch Status %x, %x\r\n", dip_check_prev,
+					dip_check);
+			dip_check_prev = dip_check;
+			// load timer with the new switch settings
+			XScuTimer_LoadTimer(TimerInstancePtr, ONE_TENTH*dip_check_prev);
+			count = 0;
+		}
+		if (XScuTimer_IsExpired(TimerInstancePtr)) {
+
+			// clear status bit
+			XScuTimer_ClearInterruptStatus(TimerInstancePtr);
+
+			// stop after 4 LEDs all lit up once
+			if (count > 3) {
+				break;
+			}
+			// output the count to LED and decrement the count
+			LED_IP_mWriteReg(XPAR_LED_IP_S_AXI_BASEADDR, 0,
+					LED_PATTERNS[count]);
+
+
+			if (psb_check == LED_PATTERNS[count]){
+				pressed =1;
+			}
+			if (pressed ==1) {
+				EarlyPress = 0;
+			} else {
+				EarlyPress = 1;
+			}
+			count++;
+		}
+	}
+	// check for button pushes
+	if (EarlyPress == 1) {
+		scoreleft = scoreleft + 1;
+		scoreright = scoreright;
+		xil_printf("Right pressed early  Score Left = %d   Score Right = %d\r\n",
+				scoreleft,scoreright);
+		GameOver = START;
+	} else {
+		//set StartDirection
+		StartDirection = RIGHT;
+		//set GameOver; display scores
+		scoreright++;
+		xil_printf("Score Left = %d   Score Right = %d\r\n", scoreleft,
+				scoreright);
+	}
+	if((scoreleft >=5  || scoreright>=5)){
+		GameOver = STOP;
+		xil_printf("gameOver  Score Left = %d   Score Right = %d\r\n",
+										scoreleft, scoreright);
+	}
+}
+
+void MoveBallLeft(void) {
+	char i, EarlyPress;
+	count = 3;
+	EarlyPress = 0;
+	int pressed =0;
+	//move LED to the left
+	while (1) {
+		psb_check = XGpio_DiscreteRead(&push, 1);
+		dip_check = XGpio_DiscreteRead(&dip, 1);
+		if (dip_check != dip_check_prev) {
+			xil_printf("DIP Switch Status %x, %x\r\n", dip_check_prev,
+					dip_check);
+			dip_check_prev = dip_check;
+			// load timer with the new switch settings
+			XScuTimer_LoadTimer(TimerInstancePtr, ONE_TENTH*dip_check_prev);
+			count = 3;
+		}
+		if (XScuTimer_IsExpired(TimerInstancePtr)) {
+
+			// clear status bit
+			XScuTimer_ClearInterruptStatus(TimerInstancePtr);
+
+			// stop after 4 LEDs all lit up once
+			if (count < 0) {
+				break;
+			}
+
+			// output the count to LED and decrement the count
+			LED_IP_mWriteReg(XPAR_LED_IP_S_AXI_BASEADDR, 0,
+					LED_PATTERNS[count]);
+
+			if (psb_check == LED_PATTERNS[count]){
+				pressed =1;
+			}
+			if (pressed =1) {
+				EarlyPress = 0;
+			} else {
+				EarlyPress = 1;
+			}
+			count--;
+		}
+	}
+	// check for button pushes
+	if (EarlyPress == 1) {
+		scoreleft = scoreleft;
+		scoreright = scoreright + 1;
+//
+		xil_printf("Left pressed early! Score Left = %d   Score Right = %d\r\n",
+				scoreleft, scoreright);
+		StartDirection=LEFT;
+		GameOver = START;
+
+	} else {
+		//set StartDirection
+		StartDirection = LEFT;
+		//set GameOver; display scores
+		scoreleft++;
+		xil_printf("Score Left = %d   Score Right = %d\r\n", scoreleft,
+				scoreright);
+	}
+
+	if((scoreleft >=5  || scoreright>=5)){
+		GameOver = STOP;
+		xil_printf("gameOver  Score Left = %d   Score Right = %d\r\n",
+									scoreleft, scoreright);
+	}
+
+}
+
+void delay(void) {
+	// Read dip switch values
+	dip_check = XGpio_DiscreteRead(&dip, 1);
+	// Load timer with delay in multiple of ONE_T
+	XScuTimer_LoadTimer(TimerInstancePtr, ONE_TENTH*dip_check_prev);
+
+	// Set AutoLoad mode
+	XScuTimer_EnableAutoReload(TimerInstancePtr);
+	// Start the timer
+	XScuTimer_Start(TimerInstancePtr);
+
+}

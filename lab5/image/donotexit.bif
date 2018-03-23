@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+	[bootloader]C:\xup\embedded\lab10VGApart2\lab10VGApart2.sdk\donotexit\Debug\donotexit.elf
+	C:\xup\embedded\lab10VGApart2\lab10VGApart2.sdk\lab10VGAdemoZSY_wrapper_hw_platform_0\lab10VGAdemoZSY_wrapper.bit
+	C:\xup\embedded\lab10VGApart2\lab10VGApart2.sdk\lab10Part1\Debug\lab10Part1.elf
+}

@@ -1,0 +1,791 @@
+15:32:51 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+15:32:53 INFO  : Processing command line option -hwspec C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper.hdf.
+15:32:53 INFO  : XSDB server has started successfully.
+20:37:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:37:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+20:37:52 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+20:38:05 INFO  : ps7_init is completed.
+20:38:05 INFO  : ps7_post_config is completed.
+20:38:06 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:42:18 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:07:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:07:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+21:07:51 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+21:07:58 INFO  : ps7_init is completed.
+21:07:58 INFO  : ps7_post_config is completed.
+21:07:58 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:16:08 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+21:16:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:34:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:34:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+21:34:28 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+21:34:39 INFO  : ps7_init is completed.
+21:34:39 INFO  : ps7_post_config is completed.
+21:34:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:35:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:35:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+21:35:56 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+21:36:03 INFO  : ps7_init is completed.
+21:36:03 INFO  : ps7_post_config is completed.
+21:36:03 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:25:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:25:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+22:25:55 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+22:26:04 INFO  : ps7_init is completed.
+22:26:04 INFO  : ps7_post_config is completed.
+22:26:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:28:07 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+22:28:19 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+22:28:21 INFO  : XSDB server has started successfully.
+22:28:23 INFO  : Processing command line option -hwspec C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper.hdf.
+22:28:24 INFO  : Checking for hwspec changes in the project lab8_part1_wrapper_hw_platform_0.
+22:28:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:28:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+22:28:48 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+22:29:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:06:45 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:30:08 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+11:30:09 INFO  : XSDB server has started successfully.
+11:30:10 INFO  : Processing command line option -hwspec C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper.hdf.
+11:30:11 INFO  : Checking for hwspec changes in the project lab8_part1_wrapper_hw_platform_0.
+11:34:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:34:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+11:34:58 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+11:35:11 INFO  : ps7_init is completed.
+11:35:12 INFO  : ps7_post_config is completed.
+11:35:12 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:38:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:38:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+11:38:36 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+11:38:43 INFO  : ps7_init is completed.
+11:38:43 INFO  : ps7_post_config is completed.
+11:38:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:39:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:40:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:41:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:43:34 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:09:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:10:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:13:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:13:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+12:13:22 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+12:13:29 INFO  : ps7_init is completed.
+12:13:29 INFO  : ps7_post_config is completed.
+12:13:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:14:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:14:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+12:14:45 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+12:14:59 INFO  : ps7_init is completed.
+12:14:59 INFO  : ps7_post_config is completed.
+12:14:59 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:18:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:19:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:24:13 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:25:03 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:27:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:28:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:30:45 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:33:10 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:34:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:35:13 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:35:48 INFO  : System reset is completed.
+12:35:50 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+12:35:51 INFO  : ps7_init is completed.
+12:35:51 INFO  : ps7_post_config is completed.
+12:48:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:48:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+12:48:32 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+12:48:40 INFO  : System reset is completed.
+12:48:42 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+12:48:42 INFO  : ps7_init is completed.
+12:48:43 INFO  : ps7_post_config is completed.
+12:49:49 INFO  : System reset is completed.
+12:49:51 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+12:49:51 INFO  : ps7_init is completed.
+12:49:51 INFO  : ps7_post_config is completed.
+12:50:29 INFO  : System reset is completed.
+12:50:31 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+12:50:31 INFO  : ps7_init is completed.
+12:50:32 INFO  : ps7_post_config is completed.
+12:51:54 INFO  : System reset is completed.
+12:51:56 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+12:51:56 INFO  : ps7_init is completed.
+12:51:57 INFO  : ps7_post_config is completed.
+12:55:59 INFO  : System reset is completed.
+12:56:01 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+12:56:01 INFO  : ps7_init is completed.
+12:56:02 INFO  : ps7_post_config is completed.
+12:56:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:56:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+12:56:37 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+12:56:48 INFO  : ----------------XSDB Script----------------
+----------------End of Script----------------
+
+12:57:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:57:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+12:57:01 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+12:57:07 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+12:57:09 INFO  : System reset is completed.
+12:57:11 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+12:57:12 INFO  : ps7_init is completed.
+12:57:12 INFO  : ps7_post_config is completed.
+12:58:14 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+12:58:16 INFO  : System reset is completed.
+12:58:18 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+12:58:18 INFO  : ps7_init is completed.
+12:58:18 INFO  : ps7_post_config is completed.
+12:59:09 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+12:59:10 INFO  : System reset is completed.
+12:59:12 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+12:59:13 INFO  : ps7_init is completed.
+12:59:13 INFO  : ps7_post_config is completed.
+13:12:38 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:12:40 INFO  : System reset is completed.
+13:12:41 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+13:12:42 INFO  : ps7_init is completed.
+13:12:42 INFO  : ps7_post_config is completed.
+13:14:01 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:14:03 INFO  : System reset is completed.
+13:14:05 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+13:14:05 INFO  : ps7_init is completed.
+13:14:05 INFO  : ps7_post_config is completed.
+13:14:53 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:14:55 INFO  : System reset is completed.
+13:14:56 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+13:14:57 INFO  : ps7_init is completed.
+13:14:57 INFO  : ps7_post_config is completed.
+13:21:39 INFO  : System reset is completed.
+13:21:40 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+13:21:41 INFO  : ps7_init is completed.
+13:21:41 INFO  : ps7_post_config is completed.
+13:22:29 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:22:31 INFO  : System reset is completed.
+13:22:32 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+13:22:33 INFO  : ps7_init is completed.
+13:22:33 INFO  : ps7_post_config is completed.
+13:24:06 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:24:07 INFO  : System reset is completed.
+13:24:09 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+13:24:10 INFO  : ps7_init is completed.
+13:24:10 INFO  : ps7_post_config is completed.
+13:27:35 INFO  : System reset is completed.
+13:27:36 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+13:27:37 INFO  : ps7_init is completed.
+13:27:37 INFO  : ps7_post_config is completed.
+13:34:19 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:34:21 INFO  : System reset is completed.
+13:34:22 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+13:34:23 INFO  : ps7_init is completed.
+13:34:23 INFO  : ps7_post_config is completed.
+13:34:45 INFO  : System reset is completed.
+13:34:47 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+13:34:47 INFO  : ps7_init is completed.
+13:34:47 INFO  : ps7_post_config is completed.
+13:35:08 INFO  : System reset is completed.
+13:35:10 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+13:35:11 INFO  : ps7_init is completed.
+13:35:11 INFO  : ps7_post_config is completed.
+13:35:34 INFO  : System reset is completed.
+13:35:36 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+13:35:36 INFO  : ps7_init is completed.
+13:35:36 INFO  : ps7_post_config is completed.
+13:36:02 INFO  : System reset is completed.
+13:36:03 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+13:36:04 INFO  : ps7_init is completed.
+13:36:04 INFO  : ps7_post_config is completed.
+13:36:49 INFO  : System reset is completed.
+13:36:50 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+13:36:51 INFO  : ps7_init is completed.
+13:36:51 INFO  : ps7_post_config is completed.
+13:38:32 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:38:34 INFO  : System reset is completed.
+13:38:35 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+13:38:36 INFO  : ps7_init is completed.
+13:38:36 INFO  : ps7_post_config is completed.
+13:43:16 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:43:18 INFO  : System reset is completed.
+13:43:19 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+13:43:20 INFO  : ps7_init is completed.
+13:43:20 INFO  : ps7_post_config is completed.
+13:45:07 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:45:08 INFO  : System reset is completed.
+13:45:10 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+13:45:11 INFO  : ps7_init is completed.
+13:45:11 INFO  : ps7_post_config is completed.
+13:48:37 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:48:38 INFO  : System reset is completed.
+13:48:40 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+13:48:40 INFO  : ps7_init is completed.
+13:48:40 INFO  : ps7_post_config is completed.
+13:56:43 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:56:45 INFO  : System reset is completed.
+13:56:47 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+13:56:47 INFO  : ps7_init is completed.
+13:56:47 INFO  : ps7_post_config is completed.
+13:57:10 INFO  : System reset is completed.
+13:57:11 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+13:57:12 INFO  : ps7_init is completed.
+13:57:12 INFO  : ps7_post_config is completed.
+14:02:53 INFO  : System reset is completed.
+14:02:55 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:02:56 INFO  : ps7_init is completed.
+14:02:56 INFO  : ps7_post_config is completed.
+14:03:17 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:03:19 INFO  : System reset is completed.
+14:03:20 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:03:21 INFO  : ps7_init is completed.
+14:03:21 INFO  : ps7_post_config is completed.
+14:03:35 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:03:37 INFO  : System reset is completed.
+14:03:38 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:03:39 INFO  : ps7_init is completed.
+14:03:39 INFO  : ps7_post_config is completed.
+14:04:57 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:04:59 INFO  : System reset is completed.
+14:05:01 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:05:01 INFO  : ps7_init is completed.
+14:05:02 INFO  : ps7_post_config is completed.
+14:05:27 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:05:28 INFO  : System reset is completed.
+14:05:30 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:05:31 INFO  : ps7_init is completed.
+14:05:31 INFO  : ps7_post_config is completed.
+14:06:38 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:06:40 INFO  : System reset is completed.
+14:06:41 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:06:42 INFO  : ps7_init is completed.
+14:06:42 INFO  : ps7_post_config is completed.
+14:07:05 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:07:07 INFO  : System reset is completed.
+14:07:08 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:07:09 INFO  : ps7_init is completed.
+14:07:09 INFO  : ps7_post_config is completed.
+14:08:45 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:08:47 INFO  : System reset is completed.
+14:08:48 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:08:49 INFO  : ps7_init is completed.
+14:08:49 INFO  : ps7_post_config is completed.
+14:09:14 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:09:21 INFO  : System reset is completed.
+14:09:23 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:09:23 INFO  : ps7_init is completed.
+14:09:23 INFO  : ps7_post_config is completed.
+14:09:42 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:09:44 INFO  : System reset is completed.
+14:09:45 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:09:46 INFO  : ps7_init is completed.
+14:09:46 INFO  : ps7_post_config is completed.
+14:10:29 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:10:30 INFO  : System reset is completed.
+14:10:32 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:10:33 INFO  : ps7_init is completed.
+14:10:33 INFO  : ps7_post_config is completed.
+14:12:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:12:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+14:12:01 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:12:09 INFO  : System reset is completed.
+14:12:11 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:12:12 INFO  : ps7_init is completed.
+14:12:12 INFO  : ps7_post_config is completed.
+14:12:26 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:12:28 INFO  : System reset is completed.
+14:12:29 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:12:30 INFO  : ps7_init is completed.
+14:12:30 INFO  : ps7_post_config is completed.
+14:14:24 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:14:26 INFO  : System reset is completed.
+14:14:27 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:14:28 INFO  : ps7_init is completed.
+14:14:28 INFO  : ps7_post_config is completed.
+14:17:31 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:17:33 INFO  : System reset is completed.
+14:17:34 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:17:35 INFO  : ps7_init is completed.
+14:17:35 INFO  : ps7_post_config is completed.
+14:17:54 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:17:57 INFO  : System reset is completed.
+14:17:58 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:17:59 INFO  : ps7_init is completed.
+14:17:59 INFO  : ps7_post_config is completed.
+14:18:07 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:18:08 INFO  : System reset is completed.
+14:18:10 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:18:10 INFO  : ps7_init is completed.
+14:18:11 INFO  : ps7_post_config is completed.
+14:20:43 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:20:44 INFO  : System reset is completed.
+14:20:46 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:20:46 INFO  : ps7_init is completed.
+14:20:46 INFO  : ps7_post_config is completed.
+14:22:25 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:22:26 INFO  : System reset is completed.
+14:22:28 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:22:28 INFO  : ps7_init is completed.
+14:22:29 INFO  : ps7_post_config is completed.
+14:23:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:23:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+14:23:25 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:23:33 INFO  : System reset is completed.
+14:23:34 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:23:35 INFO  : ps7_init is completed.
+14:23:35 INFO  : ps7_post_config is completed.
+14:24:41 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:24:43 INFO  : System reset is completed.
+14:24:45 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:24:45 INFO  : ps7_init is completed.
+14:24:45 INFO  : ps7_post_config is completed.
+14:33:26 INFO  : System reset is completed.
+14:33:28 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:33:28 INFO  : ps7_init is completed.
+14:33:28 INFO  : ps7_post_config is completed.
+14:33:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:33:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+14:33:59 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:34:10 INFO  : System reset is completed.
+14:34:11 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:34:12 INFO  : ps7_init is completed.
+14:34:12 INFO  : ps7_post_config is completed.
+14:35:25 INFO  : System reset is completed.
+14:35:26 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:35:27 INFO  : ps7_init is completed.
+14:35:27 INFO  : ps7_post_config is completed.
+14:44:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:44:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+14:44:27 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:44:45 INFO  : System reset is completed.
+14:44:46 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:44:47 INFO  : ps7_init is completed.
+14:44:47 INFO  : ps7_post_config is completed.
+14:46:14 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:46:15 INFO  : System reset is completed.
+14:46:17 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:46:17 INFO  : ps7_init is completed.
+14:46:18 INFO  : ps7_post_config is completed.
+14:47:27 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:47:28 INFO  : System reset is completed.
+14:47:30 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:47:30 INFO  : ps7_init is completed.
+14:47:30 INFO  : ps7_post_config is completed.
+14:49:04 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:49:06 INFO  : System reset is completed.
+14:49:07 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:49:08 INFO  : ps7_init is completed.
+14:49:08 INFO  : ps7_post_config is completed.
+14:50:36 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:50:38 INFO  : System reset is completed.
+14:50:39 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:50:40 INFO  : ps7_init is completed.
+14:50:40 INFO  : ps7_post_config is completed.
+14:51:12 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:51:14 INFO  : System reset is completed.
+14:51:15 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:51:16 INFO  : ps7_init is completed.
+14:51:16 INFO  : ps7_post_config is completed.
+14:51:41 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:51:42 INFO  : System reset is completed.
+14:51:44 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:51:44 INFO  : ps7_init is completed.
+14:51:45 INFO  : ps7_post_config is completed.
+14:52:10 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:52:12 INFO  : System reset is completed.
+14:52:14 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+14:52:14 INFO  : ps7_init is completed.
+14:52:14 INFO  : ps7_post_config is completed.
+15:01:16 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:01:17 INFO  : System reset is completed.
+15:01:19 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:01:19 INFO  : ps7_init is completed.
+15:01:20 INFO  : ps7_post_config is completed.
+15:09:11 INFO  : System reset is completed.
+15:09:12 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:09:13 INFO  : ps7_init is completed.
+15:09:13 INFO  : ps7_post_config is completed.
+15:09:35 INFO  : System reset is completed.
+15:09:36 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:09:37 INFO  : ps7_init is completed.
+15:09:37 INFO  : ps7_post_config is completed.
+15:10:56 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:10:57 INFO  : System reset is completed.
+15:10:59 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:10:59 INFO  : ps7_init is completed.
+15:10:59 INFO  : ps7_post_config is completed.
+15:15:54 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:15:56 INFO  : System reset is completed.
+15:15:58 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:15:58 INFO  : ps7_init is completed.
+15:15:59 INFO  : ps7_post_config is completed.
+15:17:08 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:17:09 INFO  : System reset is completed.
+15:17:11 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:17:11 INFO  : ps7_init is completed.
+15:17:12 INFO  : ps7_post_config is completed.
+15:19:37 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:19:38 INFO  : System reset is completed.
+15:19:40 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:19:41 INFO  : ps7_init is completed.
+15:19:41 INFO  : ps7_post_config is completed.
+15:20:23 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:20:25 INFO  : System reset is completed.
+15:20:27 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:20:27 INFO  : ps7_init is completed.
+15:20:27 INFO  : ps7_post_config is completed.
+15:21:22 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:21:24 INFO  : System reset is completed.
+15:21:25 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:21:26 INFO  : ps7_init is completed.
+15:21:26 INFO  : ps7_post_config is completed.
+15:22:06 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:22:09 INFO  : System reset is completed.
+15:22:10 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:22:11 INFO  : ps7_init is completed.
+15:22:11 INFO  : ps7_post_config is completed.
+15:23:39 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:23:41 INFO  : System reset is completed.
+15:23:43 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:23:43 INFO  : ps7_init is completed.
+15:23:44 INFO  : ps7_post_config is completed.
+15:24:40 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:24:43 INFO  : System reset is completed.
+15:24:44 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:24:45 INFO  : ps7_init is completed.
+15:24:45 INFO  : ps7_post_config is completed.
+15:25:26 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:25:29 INFO  : System reset is completed.
+15:25:31 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:25:31 INFO  : ps7_init is completed.
+15:25:31 INFO  : ps7_post_config is completed.
+15:26:39 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:26:40 INFO  : System reset is completed.
+15:26:42 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:26:43 INFO  : ps7_init is completed.
+15:26:43 INFO  : ps7_post_config is completed.
+15:27:22 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:27:24 INFO  : System reset is completed.
+15:27:25 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:27:26 INFO  : ps7_init is completed.
+15:27:26 INFO  : ps7_post_config is completed.
+15:28:05 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:28:06 INFO  : System reset is completed.
+15:28:08 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:28:08 INFO  : ps7_init is completed.
+15:28:08 INFO  : ps7_post_config is completed.
+15:28:59 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:29:00 INFO  : System reset is completed.
+15:29:02 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:29:02 INFO  : ps7_init is completed.
+15:29:02 INFO  : ps7_post_config is completed.
+15:29:34 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:29:35 INFO  : System reset is completed.
+15:29:37 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:29:38 INFO  : ps7_init is completed.
+15:29:38 INFO  : ps7_post_config is completed.
+15:30:03 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:30:05 INFO  : System reset is completed.
+15:30:07 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:30:07 INFO  : ps7_init is completed.
+15:30:07 INFO  : ps7_post_config is completed.
+15:30:25 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:30:27 INFO  : System reset is completed.
+15:30:28 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:30:29 INFO  : ps7_init is completed.
+15:30:29 INFO  : ps7_post_config is completed.
+15:31:33 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:31:37 INFO  : System reset is completed.
+15:31:39 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:31:39 INFO  : ps7_init is completed.
+15:31:39 INFO  : ps7_post_config is completed.
+15:33:17 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:33:19 INFO  : System reset is completed.
+15:33:20 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:33:21 INFO  : ps7_init is completed.
+15:33:21 INFO  : ps7_post_config is completed.
+15:34:13 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:34:15 INFO  : System reset is completed.
+15:34:16 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:34:17 INFO  : ps7_init is completed.
+15:34:17 INFO  : ps7_post_config is completed.
+15:34:51 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:35:00 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:35:02 INFO  : System reset is completed.
+15:35:03 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:35:04 INFO  : ps7_init is completed.
+15:35:04 INFO  : ps7_post_config is completed.
+15:35:21 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:35:22 INFO  : System reset is completed.
+15:35:24 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:35:24 INFO  : ps7_init is completed.
+15:35:24 INFO  : ps7_post_config is completed.
+15:36:00 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:36:01 INFO  : System reset is completed.
+15:36:02 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:36:03 INFO  : ps7_init is completed.
+15:36:03 INFO  : ps7_post_config is completed.
+15:36:32 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:36:34 INFO  : System reset is completed.
+15:36:36 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:36:36 INFO  : ps7_init is completed.
+15:36:36 INFO  : ps7_post_config is completed.
+15:45:25 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:45:28 INFO  : System reset is completed.
+15:45:30 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:45:30 INFO  : ps7_init is completed.
+15:45:30 INFO  : ps7_post_config is completed.
+15:46:32 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:46:33 INFO  : System reset is completed.
+15:46:35 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:46:35 INFO  : ps7_init is completed.
+15:46:35 INFO  : ps7_post_config is completed.
+15:48:52 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:48:55 INFO  : System reset is completed.
+15:48:56 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+15:48:57 INFO  : ps7_init is completed.
+15:48:57 INFO  : ps7_post_config is completed.
+16:10:13 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:10:14 INFO  : System reset is completed.
+16:10:16 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+16:10:17 INFO  : ps7_init is completed.
+16:10:17 INFO  : ps7_post_config is completed.
+16:12:05 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:12:07 INFO  : System reset is completed.
+16:12:08 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+16:12:09 INFO  : ps7_init is completed.
+16:12:09 INFO  : ps7_post_config is completed.
+16:12:44 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:12:45 INFO  : System reset is completed.
+16:12:47 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+16:12:48 INFO  : ps7_init is completed.
+16:12:48 INFO  : ps7_post_config is completed.
+16:15:30 INFO  : System reset is completed.
+16:15:32 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+16:15:32 INFO  : ps7_init is completed.
+16:15:32 INFO  : ps7_post_config is completed.
+16:17:09 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:17:10 INFO  : System reset is completed.
+16:17:11 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+16:17:12 INFO  : ps7_init is completed.
+16:17:12 INFO  : ps7_post_config is completed.
+16:17:27 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:17:28 INFO  : System reset is completed.
+16:17:30 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+16:17:30 INFO  : ps7_init is completed.
+16:17:30 INFO  : ps7_post_config is completed.
+16:18:28 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:18:29 INFO  : System reset is completed.
+16:18:30 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+16:18:31 INFO  : ps7_init is completed.
+16:18:31 INFO  : ps7_post_config is completed.
+16:19:48 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:19:50 INFO  : System reset is completed.
+16:19:51 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+16:19:52 INFO  : ps7_init is completed.
+16:19:52 INFO  : ps7_post_config is completed.
+16:21:45 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:21:46 INFO  : System reset is completed.
+16:21:48 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+16:21:48 INFO  : ps7_init is completed.
+16:21:48 INFO  : ps7_post_config is completed.
+16:22:17 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:22:18 INFO  : System reset is completed.
+16:22:20 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+16:22:21 INFO  : ps7_init is completed.
+16:22:21 INFO  : ps7_post_config is completed.
+16:26:00 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:26:04 INFO  : System reset is completed.
+16:26:05 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+16:26:06 INFO  : ps7_init is completed.
+16:26:06 INFO  : ps7_post_config is completed.
+16:29:00 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:29:01 INFO  : System reset is completed.
+16:29:02 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+16:29:03 INFO  : ps7_init is completed.
+16:29:03 INFO  : ps7_post_config is completed.
+16:31:21 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:31:24 INFO  : System reset is completed.
+16:31:25 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+16:31:26 INFO  : ps7_init is completed.
+16:31:26 INFO  : ps7_post_config is completed.
+16:36:52 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:36:54 INFO  : System reset is completed.
+16:36:55 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+16:36:56 INFO  : ps7_init is completed.
+16:36:56 INFO  : ps7_post_config is completed.
+16:38:34 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:38:35 INFO  : System reset is completed.
+16:38:37 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+16:38:37 INFO  : ps7_init is completed.
+16:38:37 INFO  : ps7_post_config is completed.
+16:39:09 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:39:10 INFO  : System reset is completed.
+16:39:11 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+16:39:12 INFO  : ps7_init is completed.
+16:39:12 INFO  : ps7_post_config is completed.
+16:40:19 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:40:20 INFO  : System reset is completed.
+16:40:22 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+16:40:22 INFO  : ps7_init is completed.
+16:40:22 INFO  : ps7_post_config is completed.
+16:41:37 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:41:39 INFO  : System reset is completed.
+16:41:40 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+16:41:41 INFO  : ps7_init is completed.
+16:41:41 INFO  : ps7_post_config is completed.
+16:42:54 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:42:55 INFO  : System reset is completed.
+16:42:57 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+16:42:57 INFO  : ps7_init is completed.
+16:42:57 INFO  : ps7_post_config is completed.
+16:44:56 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:44:58 INFO  : System reset is completed.
+16:44:59 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+16:45:00 INFO  : ps7_init is completed.
+16:45:00 INFO  : ps7_post_config is completed.
+16:47:16 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:47:18 INFO  : System reset is completed.
+16:47:19 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+16:47:20 INFO  : ps7_init is completed.
+16:47:20 INFO  : ps7_post_config is completed.
+16:50:02 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:50:03 INFO  : System reset is completed.
+16:50:05 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+16:50:05 INFO  : ps7_init is completed.
+16:50:05 INFO  : ps7_post_config is completed.
+16:50:56 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:50:59 INFO  : System reset is completed.
+16:51:00 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+16:51:01 INFO  : ps7_init is completed.
+16:51:01 INFO  : ps7_post_config is completed.
+16:52:10 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:52:11 INFO  : System reset is completed.
+16:52:13 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+16:52:13 INFO  : ps7_init is completed.
+16:52:13 INFO  : ps7_post_config is completed.
+16:53:00 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:53:02 INFO  : System reset is completed.
+16:53:03 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+16:53:04 INFO  : ps7_init is completed.
+16:53:04 INFO  : ps7_post_config is completed.
+16:56:30 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:56:31 INFO  : System reset is completed.
+16:56:33 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+16:56:33 INFO  : ps7_init is completed.
+16:56:33 INFO  : ps7_post_config is completed.
+16:56:54 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:56:56 INFO  : System reset is completed.
+16:56:57 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+16:56:58 INFO  : ps7_init is completed.
+16:56:58 INFO  : ps7_post_config is completed.
+16:57:57 INFO  : System reset is completed.
+16:57:59 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+16:57:59 INFO  : ps7_init is completed.
+16:58:00 INFO  : ps7_post_config is completed.
+17:00:51 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:00:52 INFO  : System reset is completed.
+17:00:54 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+17:00:54 INFO  : ps7_init is completed.
+17:00:54 INFO  : ps7_post_config is completed.
+17:02:57 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:02:58 INFO  : System reset is completed.
+17:02:59 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+17:03:00 INFO  : ps7_init is completed.
+17:03:00 INFO  : ps7_post_config is completed.
+17:04:09 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:04:11 INFO  : System reset is completed.
+17:04:12 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+17:04:13 INFO  : ps7_init is completed.
+17:04:13 INFO  : ps7_post_config is completed.
+17:04:35 INFO  : System reset is completed.
+17:04:36 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+17:04:37 INFO  : ps7_init is completed.
+17:04:37 INFO  : ps7_post_config is completed.
+17:04:57 INFO  : System reset is completed.
+17:04:59 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+17:05:00 INFO  : ps7_init is completed.
+17:05:00 INFO  : ps7_post_config is completed.
+17:06:50 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:06:52 INFO  : System reset is completed.
+17:06:53 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+17:06:54 INFO  : ps7_init is completed.
+17:06:54 INFO  : ps7_post_config is completed.
+17:07:40 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:07:42 INFO  : System reset is completed.
+17:07:44 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+17:07:44 INFO  : ps7_init is completed.
+17:07:44 INFO  : ps7_post_config is completed.
+17:08:49 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:08:57 INFO  : System reset is completed.
+17:08:58 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+17:08:59 INFO  : ps7_init is completed.
+17:08:59 INFO  : ps7_post_config is completed.
+17:09:26 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:09:27 INFO  : System reset is completed.
+17:09:29 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+17:09:29 INFO  : ps7_init is completed.
+17:09:29 INFO  : ps7_post_config is completed.
+17:10:31 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:10:32 INFO  : System reset is completed.
+17:10:34 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+17:10:34 INFO  : ps7_init is completed.
+17:10:34 INFO  : ps7_post_config is completed.
+17:10:52 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:10:53 INFO  : System reset is completed.
+17:10:55 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+17:10:55 INFO  : ps7_init is completed.
+17:10:55 INFO  : ps7_post_config is completed.
+17:11:26 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:11:27 INFO  : System reset is completed.
+17:11:28 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part1_zsy/lab8_part1_zsy.sdk/lab8_part1_wrapper_hw_platform_0/lab8_part1_wrapper.bit"
+17:11:29 INFO  : ps7_init is completed.
+17:11:29 INFO  : ps7_post_config is completed.
+21:09:58 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+19:03:43 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+19:03:45 INFO  : XSDB server has started successfully.
+19:03:46 INFO  : Processing command line option -hwspec C:/xup/embedded/lab8_part2/lab8_part2.sdk/lab8_part1_wrapper.hdf.
+13:07:52 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+13:07:54 INFO  : XSDB server has started successfully.
+13:07:56 INFO  : Processing command line option -hwspec C:/xup/embedded/lab8_part2/lab8_part2.sdk/lab8_part1_wrapper.hdf.
+13:07:57 INFO  : Checking for hwspec changes in the project lab8_part1_wrapper_hw_platform_1.
+14:12:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:12:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+14:12:30 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part2/lab8_part2.sdk/lab8_part1_wrapper_hw_platform_1/lab8_part1_wrapper.bit"
+14:12:59 INFO  : ps7_init is completed.
+14:12:59 INFO  : ps7_post_config is completed.
+14:12:59 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:14:05 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:15:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:15:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+14:15:28 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part2/lab8_part2.sdk/lab8_part1_wrapper_hw_platform_1/lab8_part1_wrapper.bit"
+14:15:37 INFO  : ps7_init is completed.
+14:15:37 INFO  : ps7_post_config is completed.
+14:15:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:16:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:16:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+14:16:13 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part2/lab8_part2.sdk/lab8_part1_wrapper_hw_platform_1/lab8_part1_wrapper.bit"
+14:16:25 INFO  : ps7_init is completed.
+14:16:26 INFO  : ps7_post_config is completed.
+14:16:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:19:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:19:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+14:19:42 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part2/lab8_part2.sdk/lab8_part1_wrapper_hw_platform_1/lab8_part1_wrapper.bit"
+14:19:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:21:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:21:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+14:21:24 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part2/lab8_part2.sdk/lab8_part1_wrapper_hw_platform_1/lab8_part1_wrapper.bit"
+14:21:33 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:23:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:24:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:39:13 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:41:17 INFO  : ps7_init is completed.
+14:41:17 INFO  : ps7_post_config is completed.
+14:41:17 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:41:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:41:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+14:41:44 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/lab8_part2/lab8_part2.sdk/lab8_part1_wrapper_hw_platform_1/lab8_part1_wrapper.bit"
+14:41:55 INFO  : ps7_init is completed.
+14:41:55 INFO  : ps7_post_config is completed.
+14:41:55 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:44:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:45:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:47:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:48:17 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:51:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:12:24 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

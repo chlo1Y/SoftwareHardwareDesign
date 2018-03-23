@@ -1,0 +1,275 @@
+/* Copyright (C) 2010 - 2014 Xilinx, Inc. All rights reserved. */
+/**
+ * @file xiicps_polled_master_example.c
+ * A design example of using the device in polled mode as master.
+ * The example uses buffer size 132. Please set the send buffer of the
+ * Aardvark device to be continuous 64 bytes from 0x00 to 0x3F.
+ * <pre> MODIFICATION HISTORY:
+ * Ver Who Date Changes
+ * ----- --- -------- -----------------------------------------------
+ * 1.00a jz 01/30/10 First release
+ */
+#include <stdio.h>
+#include "xparameters.h"
+#include "xiicps.h"
+#include "xil_printf.h"
+#include "xgpio.h"
+/*
+ * The following constants map to the XPAR parameters created in the
+ * xparameters.h file. They are defined here such that a user
+ * can easily change all the needed parameters in one place.
+ */
+
+#define IIC_DEVICE_ID XPAR_XIICPS_0_DEVICE_ID
+/*#define XPAR_PS7_I2C_0_DEVICE_ID 0
+ #define XPAR_PS7_I2C_1_DEVICE_ID 1*/
+#define PS_MASTER_ID  XPAR_PS7_I2C_0_DEVICE_ID
+#define PL_MASTER_ID XPAR_PS7_I2C_1_DEVICE_ID
+#define PS_DEVICE_ID 0b1001001 //floating
+#define PL_DEVICE_ID 0b1001000 //ground
+#define PS_DEV_ID PL_DEVICE_ID
+/* The slave address to send to and receive from.*/
+#define IIC_SLAVE_ADDR 0x55
+#define IIC_SCLK_RATE 100000
+/*The following constant controls the length of the buffers to be sent
+ * and received with the IIC. */
+#define TEST_BUFFER_SIZE 2
+int IicPsMasterPolledExample1(u16 DeviceId);
+/****************** Function Prototypes ******************/
+int IicPsMasterPolledExample(u16 DeviceId);
+/******************** Variable Definitions ***************/
+XIicPs Iic; /**< Instance of the IIC Device */
+XIicPs tamp101Aps, tamp101Bp1;
+XIicPs_Config *device_config_tmp101ps, *device_config_tmp101pl;
+u8 temp101a[2], temp101b[2];
+/* The following buffers are used in this example to send and
+ * receive data with the IIC. */
+u8 SendBuffer[TEST_BUFFER_SIZE]; /**< Buffer for Transmitting Data */
+u8 RecvBuffer[TEST_BUFFER_SIZE]; /**< Buffer for Receiving Data */
+/**
+ * Main function to call the polled master example.
+ * @param None.
+ * @return XST_SUCCESS if successful, XST_FAILURE if unsuccessful.
+ * @note None.
+ *********************************************/
+/*u32 XGpio_DiscreteRead(XGpio *InstancePtr, unsigned Channel);*/
+XGpio uart1;
+XGpio uart_tx_full;
+int XGpio_Initialize(XGpio *InstancePtr, u16 DeviceID);
+XGpio_Config *XGpio_LookupConfig(u16 DeviceID);
+int XGpio_CfgInitialize(XGpio *InstancePtr, XGpio_Config * Config, u32 EffectiveAddr);
+void XGpio_SetDataDirection(XGpio *InstancePtr, unsigned Channel, u32 DirectionMask);
+u32 XGpio_GetDataDirection(XGpio *InstancePtr, unsigned Channel);
+u32 XGpio_DiscreteRead(XGpio *InstancePtr, unsigned Channel);
+void XGpio_DiscreteWrite(XGpio *InstancePtr, unsigned Channel, u32 data);
+
+
+
+int main(void) {
+	int Status;
+	int StatusB;
+	xil_printf("IIC Master Polled Example Test \r\n");
+	/* Run the Iic polled example in master mode, specify the Device
+	 * ID that is specified in xparameters.h. */
+	XGpio_Initialize(&uart1, XPAR_AXI_GPIO_0_DEVICE_ID);
+			XGpio_SetDataDirection(&uart1, 1, 0x00000000);
+			XGpio_SetDataDirection(&uart1, 2, 0x00000000);
+
+			XGpio_Initialize(&uart_tx_full, XPAR_AXI_GPIO_1_DEVICE_ID);
+			XGpio_SetDataDirection(&uart_tx_full, 1, 0xFFFFFFFF);
+	while (1) {
+
+
+		Status = IicPsMasterPolledExample(PL_MASTER_ID);
+		StatusB = IicPsMasterPolledExample1(PS_MASTER_ID);
+		if (Status != XST_SUCCESS) {
+			xil_printf("IIC Master Polled Example Test Failed\r\n");
+			return XST_FAILURE;
+		}
+
+
+		//xil_printf("Successfully ran IIC Master Polled Example Test\r\n");
+		delay();
+
+	}
+
+}
+
+void print_message(char *Message){
+	unsigned char count;
+	for(count=0; count<strlen(Message); count ++){
+		while(XGpio_DiscreteRead(&uart_tx_full,1)==1){}
+		XGpio_DiscreteWrite(&uart1, 1, Message[count]);
+		XGpio_DiscreteWrite(&uart1,2,1);
+		XGpio_DiscreteWrite(&uart1,2,0);
+
+	}
+}
+void delay() {
+	int k;
+	for (k = 0; k < 15000000; k++) {
+
+	}
+}
+/***************************************************/
+/**
+ * This function sends data and expects to receive data from
+ * slave as modular of 64.
+ * This function uses interrupt-driven mode of the device.
+ * @param DeviceId is the Device ID of the IicPs Device and is the
+ * XPAR_<IICPS_instance>_DEVICE_ID value from xparameters.h
+ * @return XST_SUCCESS if successful, otherwise XST_FAILURE.
+ * @note None.
+ ***************************************************/
+int IicPsMasterPolledExample(u16 DeviceId) {
+	int Status;
+	XIicPs_Config *Config;
+	int Index;
+	float tempA;
+	float tempAF;
+	char Buffer[256];
+	/* Initialize the IIC driver so that it's ready to use
+	 * Look up the configuration in the config table, then initialize it*/
+	Config = XIicPs_LookupConfig(DeviceId);
+	if (NULL == Config) {
+		xil_printf("config error\r\n");
+		return XST_FAILURE;
+	}
+	Status = XIicPs_CfgInitialize(&tamp101Aps, Config, Config->BaseAddress);
+
+	if (Status != XST_SUCCESS) {
+		xil_printf("initilazie error\r\n");
+		return XST_FAILURE;
+	}
+//	StatusB =XIicPs_CfgInitialize(&tamp101Bp1, Config, Config->BaseAddress);
+//	if (StatusB != XST_SUCCESS) {
+//			xil_printf("initilazie B  error\r\n");
+//			return XST_FAILURE;
+//	}
+	/* Perform a self-test to ensure that the hardware
+	 * was built correctly. */
+	Status = XIicPs_SelfTest(&tamp101Aps);
+//	StatusB =XIicPs_SelfTest(&tamp101Bp1);
+	if (Status != XST_SUCCESS) {
+		xil_printf("self test error\r\n");
+		return XST_FAILURE;
+	}
+//	if (StatusB != XST_SUCCESS){
+//		xil_printf("self test  B error\r\n");
+//		return XST_FAILURE;
+//	}
+	/* Set the IIC serial clock rate. */
+	XIicPs_SetSClk(&tamp101Aps, IIC_SCLK_RATE);
+//	XIicPs_SetSClk(&tamp101Bp1, IIC_SCLK_RATE);
+	/* Initialize the send buffer bytes with a pattern to send and the
+	 * the receive buffer bytes to zero to allow the receive data to be
+	 * verified. */
+	for (Index = 0; Index < TEST_BUFFER_SIZE; Index++) {
+		SendBuffer[Index] = (Index % TEST_BUFFER_SIZE);
+		RecvBuffer[Index] = 0;
+	}
+
+//	/* Wait until bus is idle to start another transfer. */
+	while (XIicPs_BusIsBusy(&tamp101Aps)) {
+		/* NOP */
+	}
+	temp101a[0]=1;
+	temp101a[1]=0b01100000;
+
+	Status = XIicPs_MasterSendPolled(&tamp101Aps, temp101a, 2, PL_DEVICE_ID);
+	temp101a[0]=0;
+	//temp101a[1]=0;
+	Status = XIicPs_MasterSendPolled(&tamp101Aps, temp101a, 1, PL_DEVICE_ID);
+	Status = XIicPs_MasterRecvPolled(&tamp101Aps, temp101a, 2, PL_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		xil_printf("master recev error\r\n");
+		return XST_FAILURE;
+	} else {
+		xil_printf("Read TMP101 A successful\r\n");
+	}
+	tempA= (float)((temp101a[0])+(temp101a[1]>>4)/16.0);
+	tempAF = (float) ((tempA * 9) / 5) + 32;
+	xil_printf("TMP101 A \r\n");
+	printf("                                          Current Temperature is: %6.3f Celsius \r\n", tempA);
+	sprintf(Buffer, "\r\n                             Current Temperature is: %6.3f Celsius", tempA);
+	print_message(Buffer);
+	printf("                                          Current Temperature is: %6.3f  Fahrenheit\r\n", tempAF);
+	sprintf(Buffer, "\r\n                             Current Temperature is: %6.3f  Fahrenheit\r\n", tempAF);
+	print_message(Buffer);
+
+	return XST_SUCCESS;
+}
+
+int IicPsMasterPolledExample1(u16 DeviceId) {
+	int StatusB;
+	XIicPs_Config *Config;
+	int Index;
+	float tempB;
+	float tempBF;
+	char Buffer[256];
+	/* Initialize the IIC driver so that it's ready to use
+	 * Look up the configuration in the config table, then initialize it*/
+	Config = XIicPs_LookupConfig(DeviceId);
+	if (NULL == Config) {
+		xil_printf("config error\r\n");
+		return XST_FAILURE;
+	}
+
+	StatusB = XIicPs_CfgInitialize(&tamp101Bp1, Config, Config->BaseAddress);
+	if (StatusB != XST_SUCCESS) {
+		xil_printf("initilazie B  error\r\n");
+		return XST_FAILURE;
+	}
+	/* Perform a self-test to ensure that the hardware
+	 * was built correctly. */
+
+	StatusB = XIicPs_SelfTest(&tamp101Bp1);
+
+	if (StatusB != XST_SUCCESS) {
+		xil_printf("self test  B error\r\n");
+		return XST_FAILURE;
+	}
+	/* Set the IIC serial clock rate. */
+
+	XIicPs_SetSClk(&tamp101Bp1, IIC_SCLK_RATE);
+	/* Initialize the send buffer bytes with a pattern to send and the
+	 * the receive buffer bytes to zero to allow the receive data to be
+	 * verified. */
+	for (Index = 0; Index < TEST_BUFFER_SIZE; Index++) {
+		SendBuffer[Index] = (Index % TEST_BUFFER_SIZE);
+		RecvBuffer[Index] = 0;
+	}
+
+//	/* Wait until bus is idle to start another transfer. */
+
+	while (XIicPs_BusIsBusy(&tamp101Bp1)) {
+		/* NOP */
+	}
+
+	temp101b[0]=1;
+	temp101b[1]=0b01100000;
+	StatusB = XIicPs_MasterSendPolled(&tamp101Bp1, temp101b, 2, PS_DEV_ID);
+	temp101b[0]=0;
+	//temp101b[1]=0;
+	StatusB = XIicPs_MasterSendPolled(&tamp101Bp1, temp101b, 1, PS_DEV_ID);
+	StatusB = XIicPs_MasterRecvPolled(&tamp101Bp1, temp101b, 2, PS_DEV_ID);
+	if (StatusB != XST_SUCCESS) {
+		xil_printf("master B recev error\r\n");
+		return XST_FAILURE;
+	} else {
+		//xil_printf("Read TMP101 B successful\r\n");
+	}
+	tempB = (float) ((temp101b[0] +(temp101b[1] >> 4)/16.0));
+	//tempB = (float)((temp101b[0]<<4)|(temp101b[1]>>4))/16.0;
+	tempBF = (float) ((tempB * 9) / 5) + 32;
+
+	xil_printf("TMP101 B \r\n");
+	printf("                              Current Temperature is: %6.3f celsius \r\n", tempB);
+	sprintf(Buffer, "\r\n                 Current Temperature is: %6.3f celsius ", tempB);
+	print_message(Buffer);
+	printf("                              Current Temperature is: %6.3f fahrenheit\r\n", tempBF);
+	sprintf(Buffer, "\r\n                 Current Temperature is: %6.3f fahrenheit", tempBF);
+		print_message(Buffer);
+	return XST_SUCCESS;
+}
+

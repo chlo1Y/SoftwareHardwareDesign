@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sun Jan 21 10:50:14 2018
+# Process ID: 13308
+# Log file: C:/xup/embedded/lab10VGApart2/lab10VGApart2.runs/impl_1/lab10VGAdemoZSY_wrapper.vdi
+# Journal file: C:/xup/embedded/lab10VGApart2/lab10VGApart2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source lab10VGAdemoZSY_wrapper.tcl -notrace
+Command: open_checkpoint lab10VGAdemoZSY_wrapper_routed.dcp
+INFO: [Netlist 29-17] Analyzing 86 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-1079] Register lab10VGAdemoZSY_i/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_ASYNC_FIFO.LB_BUILT_IN.I_LINEBUFFER_FIFO/fg_builtin_fifo_inst/inst_fifo_gen/gconvfifo.rf/gbi.bi/g7ser_birst.rstbt/rsync.ric.rd_rst_reg_reg and lab10VGAdemoZSY_i/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_ASYNC_FIFO.LB_BUILT_IN.I_LINEBUFFER_FIFO/fg_builtin_fifo_inst/inst_fifo_gen/gconvfifo.rf/gbi.bi/g7ser_birst.rstbt/rsync.ric.rd_rst_fb_reg[4] are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+Parsing XDC File [C:/xup/embedded/lab10VGApart2/lab10VGApart2.runs/impl_1/.Xil/Vivado-13308-yangz-w540/dcp/lab10VGAdemoZSY_wrapper_early.xdc]
+Finished Parsing XDC File [C:/xup/embedded/lab10VGApart2/lab10VGApart2.runs/impl_1/.Xil/Vivado-13308-yangz-w540/dcp/lab10VGAdemoZSY_wrapper_early.xdc]
+Parsing XDC File [C:/xup/embedded/lab10VGApart2/lab10VGApart2.runs/impl_1/.Xil/Vivado-13308-yangz-w540/dcp/lab10VGAdemoZSY_wrapper.xdc]
+Finished Parsing XDC File [C:/xup/embedded/lab10VGApart2/lab10VGApart2.runs/impl_1/.Xil/Vivado-13308-yangz-w540/dcp/lab10VGAdemoZSY_wrapper.xdc]
+Parsing XDC File [C:/xup/embedded/lab10VGApart2/lab10VGApart2.runs/impl_1/.Xil/Vivado-13308-yangz-w540/dcp/lab10VGAdemoZSY_wrapper_late.xdc]
+Finished Parsing XDC File [C:/xup/embedded/lab10VGApart2/lab10VGApart2.runs/impl_1/.Xil/Vivado-13308-yangz-w540/dcp/lab10VGAdemoZSY_wrapper_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.641 . Memory (MB): peak = 474.887 ; gain = 2.137
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.641 . Memory (MB): peak = 474.887 ; gain = 2.137
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+
+INFO: [Project 1-484] Checkpoint was created with build 1266856
+open_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 474.887 ; gain = 284.508
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./lab10VGAdemoZSY_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] 'C:/xup/embedded/lab10VGApart2/lab10VGApart2.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Sun Jan 21 10:50:53 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 821.094 ; gain = 346.207
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 21 10:50:53 2018...

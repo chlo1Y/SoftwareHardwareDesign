@@ -1,0 +1,260 @@
+#include "display_ctrl.h"
+#include "xil_cache.h"
+#include "xuartps.h"
+
+#define VGA_BASEADDR XPAR_AXI_DISPCTRL_0_S_AXI_BASEADDR
+#define VGA_VDMA_ID XPAR_AXIVDMA_0_DEVICE_ID
+#define UART_BASEADDR XPAR_PS7_UART_1_BASEADDR
+#define DISPLAYDEMO_MAX_FRAME (1920*1080)
+#define DISPLAYDEMO_STRIDE (1920 * 4)
+
+DisplayCtrl vgaCtrl;
+
+/*
+ * Framebuffers for each display device
+ */
+u32 vgaBuf[DISPLAY_NUM_FRAMES][DISPLAYDEMO_MAX_FRAME];
+
+/*
+ * XPAR redefines
+ */
+
+int DisplayDemoInitialize(DisplayCtrl *dispPtr, u16 vdmaId, u32 dispCtrlAddr, u32 *framePtr[DISPLAY_NUM_FRAMES]);
+void DisplayDemoPrintMenu(DisplayCtrl *dispPtr);
+int DisplayDemoRun(DisplayCtrl *dispPtr, u32 uartAddr);
+void DisplayDemoCRMenu(DisplayCtrl *dispPtr);
+void DisplayDemoChangeRes(DisplayCtrl *dispPtr, u32 uartAddr);
+void DisplayImage(u32 *frame, u32 width, u32 height, u32 stride, u32 img[]);
+
+u32 image[] = {};
+
+int main(void) {
+	u32 *vgaPtr[DISPLAY_NUM_FRAMES];
+	int i;
+	for (i = 0; i < DISPLAY_NUM_FRAMES; i++) {
+		vgaPtr[i] = vgaBuf[i];
+	}
+
+	DisplayDemoInitialize(&vgaCtrl, VGA_VDMA_ID, VGA_BASEADDR, vgaPtr);
+
+	/* Flush UART FIFO */
+	while (XUartPs_IsReceiveData(UART_BASEADDR)) {
+		XUartPs_ReadReg(UART_BASEADDR, XUARTPS_FIFO_OFFSET);
+	}
+
+	DisplayDemoRun(&vgaCtrl, UART_BASEADDR);
+	return 1;
+}
+
+int DisplayDemoInitialize(DisplayCtrl *dispPtr, u16 vdmaId, u32 dispCtrlAddr, u32 *framePtr[DISPLAY_NUM_FRAMES]) {
+	int Status;
+
+
+	Status = DisplayInitialize(dispPtr, vdmaId, dispCtrlAddr, framePtr, DISPLAYDEMO_STRIDE);
+	if (Status != XST_SUCCESS)
+	{
+		xil_printf("Display Ctrl initialization failed during demo initialization%d\r\n", Status);
+		return XST_FAILURE;
+	}
+
+	DisplaySetMode(dispPtr, &VMODE_640x480);
+
+	Status = DisplayStart(dispPtr);
+	if (Status != XST_SUCCESS)
+	{
+		xil_printf("Couldn't start display during demo initialization%d\r\n", Status);
+		return XST_FAILURE;
+	}
+
+	DisplayImage(dispPtr->framePtr[dispPtr->curFrame], dispPtr->vMode.width, dispPtr->vMode.height, dispPtr->stride, image);
+
+	return XST_SUCCESS;
+}
+
+void DisplayDemoPrintMenu(DisplayCtrl *dispPtr) {
+	xil_printf("\n\r");
+	xil_printf("1 - Show the thing\n\r");
+	xil_printf("2 - Change resolution\n\r");
+	xil_printf("\n\r");
+	xil_printf("Enter a selection:");
+}
+
+int DisplayDemoRun(DisplayCtrl *dispPtr, u32 uartAddr)
+{
+	char userInput = 0;
+
+	/* Flush UART FIFO */
+	while (XUartPs_IsReceiveData(uartAddr))
+	{
+		XUartPs_ReadReg(uartAddr, XUARTPS_FIFO_OFFSET);
+	}
+
+	while (userInput != 'q')
+	{
+		DisplayDemoPrintMenu(dispPtr);
+
+		/* Wait for data on UART */
+		while (!XUartPs_IsReceiveData(uartAddr))
+		{}
+
+		/* Store the first character in the UART recieve FIFO and echo it */
+		userInput = XUartPs_ReadReg(uartAddr, XUARTPS_FIFO_OFFSET);
+		xil_printf("%c", userInput);
+
+		switch (userInput)
+		{
+		case '1':
+			DisplayImage(dispPtr->framePtr[dispPtr->curFrame], dispPtr->vMode.width, dispPtr->vMode.height, dispPtr->stride, image);
+			break;
+		case '2':
+			DisplayDemoChangeRes(dispPtr, uartAddr);
+			break;
+		case 'q':
+			break;
+		default :
+			xil_printf("\n\rInvalid Selection");
+		}
+	}
+
+	return XST_SUCCESS;
+}
+
+
+void DisplayDemoCRMenu(DisplayCtrl *dispPtr) {
+	xil_printf("\n\r");
+	xil_printf("1 - %s\n\r", VMODE_640x480.label);
+	xil_printf("2 - %s\n\r", VMODE_800x600.label);
+	xil_printf("3 - %s\n\r", VMODE_1280x720.label);
+	xil_printf("4 - %s\n\r", VMODE_1280x1024.label);
+	xil_printf("5 - %s\n\r", VMODE_1920x1080.label);
+	xil_printf("q - Don't change\n\r");
+	xil_printf("\n\r");
+	xil_printf("Select a new resolution:");
+}
+
+void DisplayDemoChangeRes(DisplayCtrl *dispPtr, u32 uartAddr)
+{
+	char userInput = 0;
+	int fResSet = 0;
+	int status;
+
+	/* Flush UART FIFO */
+	while (XUartPs_IsReceiveData(uartAddr))
+	{
+		XUartPs_ReadReg(uartAddr, XUARTPS_FIFO_OFFSET);
+	}
+
+	while (!fResSet)
+	{
+		DisplayDemoCRMenu(dispPtr);
+
+		/* Wait for data on UART */
+		while (!XUartPs_IsReceiveData(uartAddr))
+		{}
+
+		/* Store the first character in the UART recieve FIFO and echo it */
+		userInput = XUartPs_ReadReg(uartAddr, XUARTPS_FIFO_OFFSET);
+		xil_printf("%c", userInput);
+		status = XST_SUCCESS;
+		switch (userInput)
+		{
+		case '1':
+			status = DisplayStop(dispPtr);
+			DisplaySetMode(dispPtr, &VMODE_640x480);
+			DisplayStart(dispPtr);
+			fResSet = 1;
+			break;
+		case '2':
+			status = DisplayStop(dispPtr);
+			DisplaySetMode(dispPtr, &VMODE_800x600);
+			DisplayStart(dispPtr);
+			fResSet = 1;
+			break;
+		case '3':
+			status = DisplayStop(dispPtr);
+			DisplaySetMode(dispPtr, &VMODE_1280x720);
+			DisplayStart(dispPtr);
+			fResSet = 1;
+			break;
+		case '4':
+			status = DisplayStop(dispPtr);
+			DisplaySetMode(dispPtr, &VMODE_1280x1024);
+			DisplayStart(dispPtr);
+			fResSet = 1;
+			break;
+		case '5':
+			status = DisplayStop(dispPtr);
+			DisplaySetMode(dispPtr, &VMODE_1920x1080);
+			DisplayStart(dispPtr);
+			fResSet = 1;
+			break;
+		case 'q':
+			fResSet = 1;
+			break;
+		default :
+			xil_printf("\n\rInvalid Selection");
+		}
+		if (status == XST_DMA_ERROR)
+		{
+			xil_printf("\n\rWARNING: AXI VDMA Error detected and cleared\n\r");
+		}
+	}
+}
+
+void DisplayImage(u32 *frame, u32 width, u32 height, u32 stride, u32 img[]) {
+	u32 xcoi, ycoi;
+	u32 wStride;
+
+	wStride = stride / 4; /* Find the stride in 32-bit words */
+
+	u16 imageHeight = img[0] % 65536;
+	u16 imageWidth = img[0] >> 16;
+	u32 colors = img[1];
+
+	u32 t = colors;
+	u32 colorSize = 1;
+	while (t >>= 1) ++colorSize;
+
+	u32 bitPosition = 64 + 16 * colors;
+	u32 cnt = 0;
+	for(ycoi = 0; ycoi < imageHeight; ycoi++) {
+		for(xcoi = 0; xcoi < imageWidth; xcoi++) {
+			// Get color index
+			u32 ind = bitPosition / 32;
+			u32 bit = 31 - bitPosition % 32;
+			u32 color;
+			if(bit+1<colorSize) {
+				// In two
+				u32 color2 = img[ind];
+				color2 %= (1 << (bit+1));
+				color2 <<= (colorSize - (bit+1));
+				color = img[ind + 1];
+				color >>= (32 - (colorSize - (bit+1)));
+				color %= (1 << (32 - (colorSize - (bit+1))));
+				color |= color2;
+			} else {
+				// In one
+				color = img[ind];
+				color >>= (bit + 1 - colorSize);
+				color %= (1 << (colorSize));
+			}
+
+			u32 colorInd = 2 + color / 2;
+			if(color%2==1) {
+				color = img[colorInd] % 65536;
+			} else {
+				color = img[colorInd] >> 16;
+			}
+
+			u32 red = (color >> 11) << 3;
+			u32 green = ((color >> 5) % 64) << 2;
+			u32 blue = (color % 32) << 3;
+
+			frame[xcoi + ycoi * wStride] = red * 65536 + green * 256 + blue;
+			cnt++;
+			bitPosition += colorSize;
+		}
+	}
+
+	Xil_DCacheFlushRange((unsigned int) frame, DISPLAYDEMO_MAX_FRAME * 4);
+}

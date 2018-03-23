@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Webtalk v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Tue Jan 09 19:04:47 2018
+# Process ID: 5816
+# Log file: c:/xup/embedded/lab8_part2/webtalk.log
+# Journal file: c:/xup/embedded/lab8_part2\webtalk.jou
+#-----------------------------------------------------------
+source C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.hw/webtalk/labtool_webtalk.tcl -notrace

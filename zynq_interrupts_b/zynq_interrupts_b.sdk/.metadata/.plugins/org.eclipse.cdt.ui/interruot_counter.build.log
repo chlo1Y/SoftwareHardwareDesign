@@ -1,0 +1,6 @@
+12:51:27 **** Incremental Build of configuration Debug for project interruot_counter ****
+make all 
+make: Nothing to be done for `all'.
+
+12:51:27 Build Finished (took 172ms)
+

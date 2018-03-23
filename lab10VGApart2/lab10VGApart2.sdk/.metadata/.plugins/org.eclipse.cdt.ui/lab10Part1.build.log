@@ -1,0 +1,45 @@
+13:09:31 **** Auto Build of configuration Debug for project lab10Part1 ****
+make all 
+'Building file: ../src/audio_demo.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/audio_demo.o" -I../../lab10Part1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/audio_demo.d" -MT"src/audio_demo.d" -o "src/audio_demo.o" "../src/audio_demo.c"
+'Finished building: ../src/audio_demo.c'
+' '
+'Building file: ../src/display_ctrl.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_ctrl.o" -I../../lab10Part1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_ctrl.d" -MT"src/display_ctrl.d" -o "src/display_ctrl.o" "../src/display_ctrl.c"
+'Finished building: ../src/display_ctrl.c'
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -I../../lab10Part1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.d" -o "src/display_demo.o" "../src/display_demo.c"
+'Finished building: ../src/display_demo.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../lab10Part1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:65:7: warning: variable 'hdmiPtr' set but not used [-Wunused-but-set-variable]
+  u32 *hdmiPtr[DISPLAY_NUM_FRAMES];
+       ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/timer_ps.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_ps.o" -I../../lab10Part1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_ps.d" -MT"src/timer_ps.d" -o "src/timer_ps.o" "../src/timer_ps.c"
+'Finished building: ../src/timer_ps.c'
+' '
+'Building target: lab10Part1.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab10Part1_bsp/ps7_cortexa9_0/lib -o "lab10Part1.elf"  ./src/audio_demo.o ./src/display_ctrl.o ./src/display_demo.o ./src/main.o ./src/timer_ps.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab10Part1.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size lab10Part1.elf  |tee "lab10Part1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+1322936	   2464	68475488	69800888	42913b8	lab10Part1.elf
+'Finished building: lab10Part1.elf.size'
+' '
+
+13:09:35 Build Finished (took 3s.770ms)
+

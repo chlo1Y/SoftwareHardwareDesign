@@ -1,0 +1,765 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Tue Jan 09 14:03:21 2018
+# Process ID: 12712
+# Log file: C:/xup/embedded/lab8_part2/vivado.log
+# Journal file: C:/xup/embedded/lab8_part2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/xup/embedded/lab8_part2/lab8_part2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 780.082 ; gain = 189.285
+open_bd_design {C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/lab8_part1.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Successfully read diagram <lab8_part1> from BD file <C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/lab8_part1.bd>
+startgroup
+set_property -dict [list CONFIG.PCW_USE_M_AXI_GP0 {1} CONFIG.PCW_EN_RST0_PORT {1}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.PCW_EN_CLK0_PORT {1}] [get_bd_cells processing_system7_0]
+endgroup
+set_property  ip_repo_paths  C:/xup/embedded/UARTmodule2017 [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/xup/embedded/UARTmodule2017'.
+set_property location {1 103 103} [get_bd_cells processing_system7_0]
+startgroup
+create_bd_cell -type ip -vlnv rose-hulman.edu:user:UARTmoduleTest2017winter:1.0 UARTmoduleTest2017winter_0
+endgroup
+delete_bd_objs [get_bd_cells UARTmoduleTest2017winter_0]
+create_project UARTmodule2017Real C:/xup/embedded/UARTmodule2017Real -part xc7z010clg400-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
+add_files -norecurse C:/xup/UARTmoduleTest2017/UARTmodule2017winter.v
+import_files -force -norecurse
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: UARTmodule2017winter
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:02:28 ; elapsed = 00:12:39 . Memory (MB): peak = 953.270 ; gain = 774.855
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'UARTmodule2017winter' [C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/UARTmodule2017winter.v:6]
+	Parameter TRANSMITTED_BITS bound to: 8 - type: integer 
+	Parameter BAUDRATE bound to: 20'b00000100101100000000 
+	Parameter FREQUENCY bound to: 30'b000101111101011110000100000000 
+ERROR: [Synth 8-439] module 'BaudRateGenerator' not found [C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/UARTmodule2017winter.v:24]
+ERROR: [Synth 8-285] failed synthesizing module 'UARTmodule2017winter' [C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/UARTmodule2017winter.v:6]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:02:28 ; elapsed = 00:12:40 . Memory (MB): peak = 977.375 ; gain = 798.961
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+1 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+import_files -norecurse C:/xup/UARTmoduleTest2017/UARTmodule2017winter.ngc
+import_files -norecurse {C:/xup/UARTmoduleTest2017/ClockedOneShot.v C:/xup/UARTmoduleTest2017/uart_rx.v C:/xup/UARTmoduleTest2017/uart_tx.v C:/xup/UARTmoduleTest2017/BaudRateGenerator.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: UARTmodule2017winter
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:02:48 ; elapsed = 00:15:17 . Memory (MB): peak = 977.375 ; gain = 798.961
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'UARTmodule2017winter' [C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/UARTmodule2017winter.v:6]
+	Parameter TRANSMITTED_BITS bound to: 8 - type: integer 
+	Parameter BAUDRATE bound to: 20'b00000100101100000000 
+	Parameter FREQUENCY bound to: 30'b000101111101011110000100000000 
+INFO: [Synth 8-638] synthesizing module 'BaudRateGenerator' [C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/BaudRateGenerator.v:9]
+INFO: [Synth 8-256] done synthesizing module 'BaudRateGenerator' (1#1) [C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/BaudRateGenerator.v:9]
+INFO: [Synth 8-638] synthesizing module 'ClockedOneShot' [C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/ClockedOneShot.v:6]
+	Parameter State0 bound to: 0 - type: integer 
+	Parameter State1 bound to: 1 - type: integer 
+	Parameter State2 bound to: 2 - type: integer 
+	Parameter State3 bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ClockedOneShot' (2#1) [C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/ClockedOneShot.v:6]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/uart_tx.v:76]
+ERROR: [Synth 8-439] module 'kcuart_tx' not found [C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/uart_tx.v:106]
+ERROR: [Synth 8-285] failed synthesizing module 'uart_tx' [C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/uart_tx.v:76]
+ERROR: [Synth 8-285] failed synthesizing module 'UARTmodule2017winter' [C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/UARTmodule2017winter.v:6]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:02:49 ; elapsed = 00:15:17 . Memory (MB): peak = 983.418 ; gain = 805.004
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+6 Infos, 0 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+import_files -norecurse {C:/xup/UARTmoduleTest2017/DelayLoop.v C:/xup/UARTmoduleTest2017/kcuart_tx.v C:/xup/UARTmoduleTest2017/bbfifo_16x8.v C:/xup/UARTmoduleTest2017/kcuart_rx.v}
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: UARTmodule2017winter
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:03:05 ; elapsed = 00:16:08 . Memory (MB): peak = 1023.277 ; gain = 844.863
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'UARTmodule2017winter' [C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/UARTmodule2017winter.v:6]
+	Parameter TRANSMITTED_BITS bound to: 8 - type: integer 
+	Parameter BAUDRATE bound to: 20'b00000100101100000000 
+	Parameter FREQUENCY bound to: 30'b000101111101011110000100000000 
+INFO: [Synth 8-638] synthesizing module 'BaudRateGenerator' [C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/BaudRateGenerator.v:9]
+INFO: [Synth 8-256] done synthesizing module 'BaudRateGenerator' (1#1) [C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/BaudRateGenerator.v:9]
+INFO: [Synth 8-638] synthesizing module 'ClockedOneShot' [C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/ClockedOneShot.v:6]
+	Parameter State0 bound to: 0 - type: integer 
+	Parameter State1 bound to: 1 - type: integer 
+	Parameter State2 bound to: 2 - type: integer 
+	Parameter State3 bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ClockedOneShot' (2#1) [C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/ClockedOneShot.v:6]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/uart_tx.v:76]
+INFO: [Synth 8-638] synthesizing module 'kcuart_tx' [C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/kcuart_tx.v:91]
+INFO: [Synth 8-638] synthesizing module 'LUT4' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15830]
+	Parameter INIT bound to: 16'b1110010011111111 
+INFO: [Synth 8-256] done synthesizing module 'LUT4' (3#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15830]
+INFO: [Synth 8-638] synthesizing module 'MUXF5' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:16690]
+INFO: [Synth 8-256] done synthesizing module 'MUXF5' (4#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:16690]
+INFO: [Synth 8-638] synthesizing module 'MUXF6' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:16727]
+INFO: [Synth 8-256] done synthesizing module 'MUXF6' (5#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:16727]
+INFO: [Synth 8-638] synthesizing module 'FDRS' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:3050]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRS' (6#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:3050]
+INFO: [Synth 8-638] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:3016]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE' (7#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:3016]
+INFO: [Synth 8-638] synthesizing module 'LUT2' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15753]
+	Parameter INIT bound to: 4'b1000 
+INFO: [Synth 8-256] done synthesizing module 'LUT2' (8#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15753]
+INFO: [Synth 8-638] synthesizing module 'MULT_AND' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:16642]
+INFO: [Synth 8-256] done synthesizing module 'MULT_AND' (9#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:16642]
+INFO: [Synth 8-638] synthesizing module 'MUXCY' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:16653]
+INFO: [Synth 8-256] done synthesizing module 'MUXCY' (10#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:16653]
+INFO: [Synth 8-638] synthesizing module 'XORCY' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:35694]
+INFO: [Synth 8-256] done synthesizing module 'XORCY' (11#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:35694]
+INFO: [Synth 8-638] synthesizing module 'LUT3' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15790]
+	Parameter INIT bound to: 8'b00010000 
+INFO: [Synth 8-256] done synthesizing module 'LUT3' (12#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15790]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized0' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15830]
+	Parameter INIT bound to: 16'b0000000110010000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized0' (12#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15830]
+INFO: [Synth 8-638] synthesizing module 'FDE' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:2917]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDE' (13#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:2917]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized1' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15830]
+	Parameter INIT bound to: 16'b0001010101000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized1' (13#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15830]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized0' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15790]
+	Parameter INIT bound to: 8'b10010100 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized0' (13#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15790]
+INFO: [Synth 8-638] synthesizing module 'SRL16E' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:34538]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'SRL16E' (14#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:34538]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized2' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15830]
+	Parameter INIT bound to: 16'b0000000110000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized2' (14#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15830]
+INFO: [Synth 8-638] synthesizing module 'FD' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:2775]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FD' (15#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:2775]
+INFO: [Synth 8-256] done synthesizing module 'kcuart_tx' (16#1) [C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/kcuart_tx.v:91]
+INFO: [Synth 8-638] synthesizing module 'bbfifo_16x8' [C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/bbfifo_16x8.v:88]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized3' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15830]
+	Parameter INIT bound to: 16'b0110011000000110 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized3' (16#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15830]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized4' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15830]
+	Parameter INIT bound to: 16'b0110011000000110 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized4' (16#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15830]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized5' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15830]
+	Parameter INIT bound to: 16'b0110011000000110 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized5' (16#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15830]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized6' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15830]
+	Parameter INIT bound to: 16'b0110011000000110 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized6' (16#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15830]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized7' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15830]
+	Parameter INIT bound to: 16'b0000000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized7' (16#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15830]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized8' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15830]
+	Parameter INIT bound to: 16'b1000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized8' (16#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15830]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized9' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15830]
+	Parameter INIT bound to: 16'b1011111110100000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized9' (16#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15830]
+INFO: [Synth 8-638] synthesizing module 'FDR' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:3003]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDR' (17#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:3003]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized1' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15790]
+	Parameter INIT bound to: 8'b11000100 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized1' (17#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15790]
+INFO: [Synth 8-256] done synthesizing module 'bbfifo_16x8' (18#1) [C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/bbfifo_16x8.v:88]
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (19#1) [C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/uart_tx.v:76]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/uart_rx.v:76]
+INFO: [Synth 8-638] synthesizing module 'kcuart_rx' [C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/kcuart_rx.v:88]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized10' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15830]
+	Parameter INIT bound to: 16'b0000000001000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized10' (19#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15830]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized2' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15790]
+	Parameter INIT bound to: 8'b01010100 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized2' (19#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:15790]
+INFO: [Synth 8-256] done synthesizing module 'kcuart_rx' (20#1) [C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/kcuart_rx.v:88]
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (21#1) [C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/uart_rx.v:76]
+INFO: [Synth 8-256] done synthesizing module 'UARTmodule2017winter' (22#1) [C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/UARTmodule2017winter.v:6]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:03:06 ; elapsed = 00:16:09 . Memory (MB): peak = 1023.277 ; gain = 844.863
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:06 ; elapsed = 00:16:09 . Memory (MB): peak = 1023.277 ; gain = 844.863
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 50 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-140] Inserted 10 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 19 OBUFs to IO ports without IO buffers.
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 42 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 3 instances
+  FD => FDRE: 4 instances
+  FDE => FDRE: 26 instances
+  FDR => FDRE: 2 instances
+  FDRS => FDRS (FDRE, LUT2, VCC): 1 instances
+  MULT_AND => LUT2: 3 instances
+  MUXF5 => LUT3: 2 instances
+  MUXF6 => LUT3: 1 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:03:20 ; elapsed = 00:16:18 . Memory (MB): peak = 1280.328 ; gain = 1101.914
+79 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1280.328 ; gain = 257.051
+ipx::package_project -root_dir C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017 -vendor rose-hulman.edu -library user -taxonomy /UserIP -generated_files
+WARNING: [IP_Flow 19-3833] Not packaging sources file marked as disabled: 'C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/UARTmodule2017winter.ngc'.
+WARNING: [IP_Flow 19-3833] Not packaging sources file marked as disabled: 'C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/DelayLoop.v'.
+INFO: [IP_Flow 19-2228] Inferred bus interface "reset" of definition type "xilinx.com:signal:reset:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "clock" of definition type "xilinx.com:signal:clock:1.0".
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  c:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017 [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017'.
+startgroup
+current_project lab8_part2
+create_bd_cell -type ip -vlnv rose-hulman.edu:user:UARTmoduleTest2017winter:1.0 UARTmoduleTest2017winter_0
+endgroup
+delete_bd_objs [get_bd_cells UARTmoduleTest2017winter_0]
+update_ip_catalog -delete_ip rose-hulman.edu:user:UARTmoduleTest2017winter:1.0 -repo_path c:/xup/embedded/UARTmodule2017
+INFO: [IP_Flow 19-1659] Deleted IP 'rose-hulman.edu:user:UARTmoduleTest2017winter:1.0' from repository 'c:/xup/embedded/UARTmodule2017' at c:/xup/embedded/UARTmodule2017/UARTmodule2017.srcs/sources_1/imports/UARTmoduleTest2017.
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/xup/embedded/UARTmodule2017'
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property  ip_repo_paths  C:/xup/embedded/UARTmodule2017Real [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/xup/embedded/UARTmodule2017Real'.
+startgroup
+create_bd_cell -type ip -vlnv rose-hulman.edu:user:UARTmodule2017winter:1.0 UARTmodule2017winter_0
+endgroup
+set_property location {1 172 194} [get_bd_cells UARTmodule2017winter_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {8} CONFIG.C_GPIO2_WIDTH {1} CONFIG.C_IS_DUAL {1} CONFIG.C_ALL_OUTPUTS {1} CONFIG.C_ALL_OUTPUTS_2 {1}] [get_bd_cells axi_gpio_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_1
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {1} CONFIG.C_ALL_INPUTS {1}] [get_bd_cells axi_gpio_1]
+endgroup
+set_property location {1 175 224} [get_bd_cells UARTmodule2017winter_0]
+set_property location {2 403 203} [get_bd_cells axi_gpio_0]
+set_property location {2 359 53} [get_bd_cells axi_gpio_1]
+set_property location {1 173 227} [get_bd_cells UARTmodule2017winter_0]
+connect_bd_net [get_bd_pins axi_gpio_0/gpio_io_o] [get_bd_pins UARTmodule2017winter_0/tx_data]
+WARNING: [BD 41-1306] The connection to interface pin /axi_gpio_0/gpio_io_o is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+connect_bd_net [get_bd_pins axi_gpio_0/gpio2_io_o] [get_bd_pins UARTmodule2017winter_0/write_to_uart]
+WARNING: [BD 41-1306] The connection to interface pin /axi_gpio_0/gpio2_io_o is being overridden by the user. This pin will not be connected as a part of interface connection GPIO2
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins axi_gpio_0/S_AXI]
+INFO: [Ipptcl 7-578] No Compatible Board Interface found.Board Tab not created
+</axi_gpio_0/S_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x41200000[ 64K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins axi_gpio_1/S_AXI]
+</axi_gpio_1/S_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x41210000[ 64K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "btns_4bits" }  [get_bd_intf_pins axi_gpio_1/GPIO]
+INFO: [board_rule:/axi_gpio_1-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /axi_gpio_1]
+INFO: [board_rule:/axi_gpio_1-100] set_property CONFIG.GPIO_BOARD_INTERFACE btns_4bits [get_bd_cells /axi_gpio_1]
+INFO: [board_rule:/axi_gpio_1-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 btns_4bits
+INFO: [board_rule:/axi_gpio_1-100] connect_bd_intf_net /btns_4bits /axi_gpio_1/GPIO
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "btns_4bits" }  [get_bd_intf_pins axi_gpio_1/GPIO]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins axi_gpio_1/S_AXI]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins axi_gpio_0/S_AXI]'
+INFO: [Common 17-17] undo 'startgroup'
+startgroup
+create_bd_port -dir O tx
+connect_bd_net [get_bd_pins /UARTmodule2017winter_0/tx] [get_bd_ports tx]
+endgroup
+startgroup
+create_bd_port -dir I rx
+connect_bd_net [get_bd_pins /UARTmodule2017winter_0/rx] [get_bd_ports rx]
+endgroup
+startgroup
+create_bd_port -dir O -from 7 -to 0 transmitted_bits
+connect_bd_net [get_bd_pins /UARTmodule2017winter_0/transmitted_bits] [get_bd_ports transmitted_bits]
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins axi_gpio_0/S_AXI]
+INFO: [Ipptcl 7-578] No Compatible Board Interface found.Board Tab not created
+</axi_gpio_0/S_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x41200000[ 64K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins axi_gpio_1/S_AXI]
+</axi_gpio_1/S_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x41210000[ 64K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "btns_4bits" }  [get_bd_intf_pins axi_gpio_1/GPIO]
+INFO: [board_rule:/axi_gpio_1-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /axi_gpio_1]
+INFO: [board_rule:/axi_gpio_1-100] set_property CONFIG.GPIO_BOARD_INTERFACE btns_4bits [get_bd_cells /axi_gpio_1]
+INFO: [board_rule:/axi_gpio_1-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 btns_4bits
+INFO: [board_rule:/axi_gpio_1-100] connect_bd_intf_net /btns_4bits /axi_gpio_1/GPIO
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "btns_4bits" }  [get_bd_intf_pins axi_gpio_1/GPIO]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins axi_gpio_1/S_AXI]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins axi_gpio_0/S_AXI]'
+INFO: [Common 17-17] undo 'startgroup'
+set_property -dict [list CONFIG.C_GPIO_WIDTH {1}] [get_bd_cells axi_gpio_1]
+reset_property LEFT [get_bd_pins transmitted_bits]
+ERROR: [Common 17-107] Cannot change read-only property 'LEFT'.
+Resolution: Please refer to Vivado Properties Reference Guide (UG912) for more information on setting properties.
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins axi_gpio_0/S_AXI]
+INFO: [Ipptcl 7-578] No Compatible Board Interface found.Board Tab not created
+</axi_gpio_0/S_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x41200000[ 64K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins axi_gpio_1/S_AXI]
+</axi_gpio_1/S_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x41210000[ 64K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "btns_4bits" }  [get_bd_intf_pins axi_gpio_1/GPIO]
+INFO: [board_rule:/axi_gpio_1-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /axi_gpio_1]
+INFO: [board_rule:/axi_gpio_1-100] set_property CONFIG.GPIO_BOARD_INTERFACE btns_4bits [get_bd_cells /axi_gpio_1]
+INFO: [board_rule:/axi_gpio_1-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 btns_4bits
+INFO: [board_rule:/axi_gpio_1-100] connect_bd_intf_net /btns_4bits /axi_gpio_1/GPIO
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "btns_4bits" }  [get_bd_intf_pins axi_gpio_1/GPIO]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins axi_gpio_1/S_AXI]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins axi_gpio_0/S_AXI]'
+INFO: [Common 17-17] undo 'startgroup'
+set_property -dict [list CONFIG.C_GPIO_WIDTH {1}] [get_bd_cells axi_gpio_1]
+connect_bd_net [get_bd_pins axi_gpio_1/gpio_io_i] [get_bd_pins UARTmodule2017winter_0/tx_full]
+WARNING: [BD 41-1306] The connection to interface pin /axi_gpio_1/gpio_io_i is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+connect_bd_net [get_bd_pins UARTmodule2017winter_0/reset] [get_bd_pins processing_system7_0/FCLK_RESET0_N]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins axi_gpio_0/S_AXI]
+INFO: [Ipptcl 7-578] No Compatible Board Interface found.Board Tab not created
+</axi_gpio_0/S_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x41200000[ 64K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins axi_gpio_1/S_AXI]
+</axi_gpio_1/S_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x41210000[ 64K ]>
+endgroup
+connect_bd_net -net [get_bd_nets processing_system7_0_FCLK_CLK0] [get_bd_pins UARTmodule2017winter_0/clock] [get_bd_pins processing_system7_0/FCLK_CLK0]
+set_property location {3 866 409} [get_bd_cells UARTmodule2017winter_0]
+set_property location {0.5 -131 177} [get_bd_cells rst_processing_system7_0_100M]
+set_property location {1 240 120} [get_bd_cells rst_processing_system7_0_100M]
+set_property location {1 123 370} [get_bd_cells processing_system7_0]
+set_property location {3 1066 174} [get_bd_cells processing_system7_0_axi_periph]
+set_property location {3 940 184} [get_bd_cells processing_system7_0_axi_periph]
+set_property location {3.5 1375 77} [get_bd_cells axi_gpio_1]
+set_property location {4 1425 261} [get_bd_cells axi_gpio_0]
+set_property location {1.5 607 141} [get_bd_cells processing_system7_0_axi_periph]
+set_property location {2.5 686 162} [get_bd_cells processing_system7_0_axi_periph]
+set_property location {2 708 381} [get_bd_cells UARTmodule2017winter_0]
+set_property location {2 678 392} [get_bd_cells UARTmodule2017winter_0]
+set_property location {2.5 1051 67} [get_bd_cells axi_gpio_1]
+set_property location {3 1078 199} [get_bd_cells axi_gpio_0]
+set_property location {3 1069 451} [get_bd_cells UARTmodule2017winter_0]
+set_property location {2 575 133} [get_bd_cells processing_system7_0_axi_periph]
+save_bd_design
+Wrote  : <C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/lab8_part1.bd> 
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hdl/lab8_part1_wrapper.v" into library work [C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hdl/lab8_part1_wrapper.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hdl/lab8_part1.v" into library work [C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hdl/lab8_part1.v:1]
+CRITICAL WARNING: [BD 41-1347] Reset pin /UARTmodule2017winter_0/reset (associated clock /UARTmodule2017winter_0/clock) is connected to asynchronous reset source /processing_system7_0/FCLK_RESET0_N.
+This may prevent design from meeting timing. Instead it should be connected to reset source /rst_processing_system7_0_100M/peripheral_aresetn.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. 
+Please check your design and connect them if needed: 
+/UARTmodule2017winter_0/read_from_uart
+
+Verilog Output written to : C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hdl/lab8_part1.v
+Verilog Output written to : C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hdl/lab8_part1_wrapper.v
+Wrote  : <C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/lab8_part1.bd> 
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'lab8_part1_processing_system7_0_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'lab8_part1_UARTmodule2017winter_0_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block UARTmodule2017winter_0 .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'lab8_part1_axi_gpio_0_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'lab8_part1_axi_gpio_0_0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'lab8_part1_axi_gpio_0_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'lab8_part1_axi_gpio_1_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'lab8_part1_axi_gpio_1_0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'lab8_part1_axi_gpio_1_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_1 .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'lab8_part1_rst_processing_system7_0_100M_3'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'lab8_part1_rst_processing_system7_0_100M_3' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'lab8_part1_rst_processing_system7_0_100M_3'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_100M .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'lab8_part1_xbar_3'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/xbar .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'lab8_part1_auto_pc_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1379] This design does not contain any processor.
+Exporting to file C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hw_handoff/lab8_part1.hwh
+Generated Block Design Tcl file C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hw_handoff/lab8_part1_bd.tcl
+Generated Hardware Definition File C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hdl/lab8_part1.hwdef
+INFO: [BD 41-1662] The design 'lab8_part1.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. 
+Please check your design and connect them if needed: 
+/UARTmodule2017winter_0/read_from_uart
+
+Verilog Output written to : C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hdl/lab8_part1.v
+Verilog Output written to : C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hdl/lab8_part1_wrapper.v
+Wrote  : <C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/lab8_part1.bd> 
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'lab8_part1_processing_system7_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'lab8_part1_UARTmodule2017winter_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block UARTmodule2017winter_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'lab8_part1_axi_gpio_0_0'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'lab8_part1_axi_gpio_0_0'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'lab8_part1_axi_gpio_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'lab8_part1_axi_gpio_1_0'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'lab8_part1_axi_gpio_1_0'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'lab8_part1_axi_gpio_1_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_1 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'lab8_part1_rst_processing_system7_0_100M_3'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'lab8_part1_rst_processing_system7_0_100M_3'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'lab8_part1_rst_processing_system7_0_100M_3'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_100M .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'lab8_part1_xbar_3'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/xbar .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'lab8_part1_auto_pc_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1379] This design does not contain any processor.
+Exporting to file C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hw_handoff/lab8_part1.hwh
+Generated Block Design Tcl file C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hw_handoff/lab8_part1_bd.tcl
+Generated Hardware Definition File C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hdl/lab8_part1.hwdef
+[Tue Jan 09 18:41:48 2018] Launched synth_1...
+Run output will be captured here: C:/xup/embedded/lab8_part2/lab8_part2.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 1478.992 ; gain = 22.531
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/ip/lab8_part1_processing_system7_0_0/lab8_part1_processing_system7_0_0.xdc] for cell 'lab8_part1_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/ip/lab8_part1_processing_system7_0_0/lab8_part1_processing_system7_0_0.xdc] for cell 'lab8_part1_i/processing_system7_0/inst'
+Parsing XDC File [c:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/ip/lab8_part1_axi_gpio_0_0/lab8_part1_axi_gpio_0_0_board.xdc] for cell 'lab8_part1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/ip/lab8_part1_axi_gpio_0_0/lab8_part1_axi_gpio_0_0_board.xdc] for cell 'lab8_part1_i/axi_gpio_0/U0'
+Parsing XDC File [c:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/ip/lab8_part1_axi_gpio_0_0/lab8_part1_axi_gpio_0_0.xdc] for cell 'lab8_part1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/ip/lab8_part1_axi_gpio_0_0/lab8_part1_axi_gpio_0_0.xdc] for cell 'lab8_part1_i/axi_gpio_0/U0'
+Parsing XDC File [c:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/ip/lab8_part1_axi_gpio_1_0/lab8_part1_axi_gpio_1_0_board.xdc] for cell 'lab8_part1_i/axi_gpio_1/U0'
+Finished Parsing XDC File [c:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/ip/lab8_part1_axi_gpio_1_0/lab8_part1_axi_gpio_1_0_board.xdc] for cell 'lab8_part1_i/axi_gpio_1/U0'
+Parsing XDC File [c:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/ip/lab8_part1_axi_gpio_1_0/lab8_part1_axi_gpio_1_0.xdc] for cell 'lab8_part1_i/axi_gpio_1/U0'
+Finished Parsing XDC File [c:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/ip/lab8_part1_axi_gpio_1_0/lab8_part1_axi_gpio_1_0.xdc] for cell 'lab8_part1_i/axi_gpio_1/U0'
+Parsing XDC File [c:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/ip/lab8_part1_rst_processing_system7_0_100M_3/lab8_part1_rst_processing_system7_0_100M_3_board.xdc] for cell 'lab8_part1_i/rst_processing_system7_0_100M'
+Finished Parsing XDC File [c:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/ip/lab8_part1_rst_processing_system7_0_100M_3/lab8_part1_rst_processing_system7_0_100M_3_board.xdc] for cell 'lab8_part1_i/rst_processing_system7_0_100M'
+Parsing XDC File [c:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/ip/lab8_part1_rst_processing_system7_0_100M_3/lab8_part1_rst_processing_system7_0_100M_3.xdc] for cell 'lab8_part1_i/rst_processing_system7_0_100M'
+Finished Parsing XDC File [c:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/ip/lab8_part1_rst_processing_system7_0_100M_3/lab8_part1_rst_processing_system7_0_100M_3.xdc] for cell 'lab8_part1_i/rst_processing_system7_0_100M'
+Parsing XDC File [C:/xup/embedded/lab8_part2/lab8_part2.srcs/constrs_1/new/lab8Constrian.xdc]
+Finished Parsing XDC File [C:/xup/embedded/lab8_part2/lab8_part2.srcs/constrs_1/new/lab8Constrian.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 1585.484 ; gain = 106.285
+set_property drive 8 [get_ports [list iic_1_scl_io iic_1_sda_io]]
+ipx::unload_core c:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/component.xml
+current_project UARTmodule2017Real
+ipx::package_project -root_dir C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017 -vendor rose-hulman.edu -library user -taxonomy /UserIP -generated_files -force
+WARNING: [IP_Flow 19-3833] Not packaging sources file marked as disabled: 'C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/UARTmodule2017winter.ngc'.
+WARNING: [IP_Flow 19-3833] Not packaging sources file marked as disabled: 'C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017/DelayLoop.v'.
+INFO: [IP_Flow 19-2228] Inferred bus interface "reset" of definition type "xilinx.com:signal:reset:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "clock" of definition type "xilinx.com:signal:clock:1.0".
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.srcs/sources_1/imports/UARTmoduleTest2017'
+current_project lab8_part2
+open_bd_design {C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/lab8_part1.bd}
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/xup/embedded/UARTmodule2017Real'.
+regenerate_bd_layout
+report_ip_status -name ip_status 
+delete_bd_objs [get_bd_nets UARTmodule2017winter_0_tx_full] [get_bd_nets axi_gpio_0_gpio_io_o] [get_bd_nets rx_1] [get_bd_nets UARTmodule2017winter_0_tx] [get_bd_nets UARTmodule2017winter_0_transmitted_bits] [get_bd_nets axi_gpio_0_gpio2_io_o] [get_bd_cells UARTmodule2017winter_0]
+startgroup
+create_bd_cell -type ip -vlnv rose-hulman.edu:user:UARTmodule2017winter:1.0 UARTmodule2017winter_0
+endgroup
+set_property location {3 909 532} [get_bd_cells UARTmodule2017winter_0]
+startgroup
+create_bd_port -dir O tx_1
+connect_bd_net [get_bd_pins /UARTmodule2017winter_0/tx] [get_bd_ports tx_1]
+endgroup
+startgroup
+create_bd_port -dir I rx_1
+connect_bd_net [get_bd_pins /UARTmodule2017winter_0/rx] [get_bd_ports rx_1]
+endgroup
+startgroup
+create_bd_port -dir O -from 3 -to 0 transmitted_bits_1
+connect_bd_net [get_bd_pins /UARTmodule2017winter_0/transmitted_bits] [get_bd_ports transmitted_bits_1]
+endgroup
+connect_bd_net -net [get_bd_nets processing_system7_0_FCLK_RESET0_N] [get_bd_pins UARTmodule2017winter_0/reset] [get_bd_pins processing_system7_0/FCLK_RESET0_N]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "btns_4bits" }  [get_bd_intf_pins axi_gpio_0/GPIO]
+INFO: [board_rule:/axi_gpio_0-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /axi_gpio_0]
+INFO: [board_rule:/axi_gpio_0-100] set_property CONFIG.GPIO_BOARD_INTERFACE btns_4bits [get_bd_cells /axi_gpio_0]
+INFO: [board_rule:/axi_gpio_0-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 btns_4bits
+INFO: [board_rule:/axi_gpio_0-100] connect_bd_intf_net /btns_4bits /axi_gpio_0/GPIO
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "btns_4bits" }  [get_bd_intf_pins axi_gpio_0/GPIO2]
+INFO: [board_rule:/axi_gpio_0-100] set_property CONFIG.GPIO2_BOARD_INTERFACE btns_4bits [get_bd_cells /axi_gpio_0]
+ERROR: [IP_Flow 19-3478] Validation failed for parameter 'GPIO2 BOARD INTERFACE(GPIO2_BOARD_INTERFACE)' with value 'btns_4bits' for BD Cell '/axi_gpio_0'. Board Interfaces cannot be same for both the channels.
+ERROR: [IP_Flow 19-3478] Validation failed for parameter 'GPIO BOARD INTERFACE(GPIO_BOARD_INTERFACE)' with value 'btns_4bits' for BD Cell '/axi_gpio_0'. Board Interfaces cannot be same for both the channels.
+INFO: [IP_Flow 19-3438] Customization errors found on '/axi_gpio_0'. Restoring to previous valid configuration.
+ERROR: [BD 41-245] set_property error - Validation failed for parameter 'GPIO2 BOARD INTERFACE(GPIO2_BOARD_INTERFACE)' with value 'btns_4bits' for BD Cell '/axi_gpio_0'. Board Interfaces cannot be same for both the channels.
+Validation failed for parameter 'GPIO BOARD INTERFACE(GPIO_BOARD_INTERFACE)' with value 'btns_4bits' for BD Cell '/axi_gpio_0'. Board Interfaces cannot be same for both the channels.
+Customization errors found on '/axi_gpio_0'. Restoring to previous valid configuration.
+
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running apply_rule TCL procedure: ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+    ::xilinx.com_bd_rule_board::apply_rule Line 44
+INFO: [BD 5-145] Automation rule xilinx.com:bd_rule:board was not applied to object GPIO2
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "btns_4bits" }  [get_bd_intf_pins axi_gpio_0/GPIO2]'
+ERROR: [Common 17-39] 'apply_bd_automation' failed due to earlier errors.
+endgroup
+delete_bd_objs [get_bd_ports transmitted_bits]
+delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO] [get_bd_intf_ports btns_4bits]
+delete_bd_objs [get_bd_ports tx]
+delete_bd_objs [get_bd_nets UARTmodule2017winter_0_tx] [get_bd_ports tx_1]
+delete_bd_objs [get_bd_ports rx]
+delete_bd_objs [get_bd_nets rx_1_1] [get_bd_ports rx_1]
+startgroup
+create_bd_port -dir I rx
+connect_bd_net [get_bd_pins /UARTmodule2017winter_0/rx] [get_bd_ports rx]
+endgroup
+startgroup
+create_bd_port -dir O tx
+connect_bd_net [get_bd_pins /UARTmodule2017winter_0/tx] [get_bd_ports tx]
+endgroup
+connect_bd_net [get_bd_pins UARTmodule2017winter_0/tx_full] [get_bd_pins axi_gpio_1/gpio_io_i]
+WARNING: [BD 41-1306] The connection to interface pin /axi_gpio_1/gpio_io_i is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+delete_bd_objs [get_bd_intf_nets processing_system7_0_axi_periph_M00_AXI] [get_bd_cells axi_gpio_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property location {4 1192 239} [get_bd_cells axi_gpio_0]
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {8} CONFIG.C_GPIO2_WIDTH {1} CONFIG.C_IS_DUAL {1} CONFIG.C_ALL_OUTPUTS {1} CONFIG.C_ALL_OUTPUTS_2 {1}] [get_bd_cells axi_gpio_0]
+endgroup
+connect_bd_net [get_bd_pins axi_gpio_0/gpio_io_o] [get_bd_pins UARTmodule2017winter_0/tx_data]
+WARNING: [BD 41-1306] The connection to interface pin /axi_gpio_0/gpio_io_o is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+connect_bd_net [get_bd_pins axi_gpio_0/gpio2_io_o] [get_bd_pins UARTmodule2017winter_0/write_to_uart]
+WARNING: [BD 41-1306] The connection to interface pin /axi_gpio_0/gpio2_io_o is being overridden by the user. This pin will not be connected as a part of interface connection GPIO2
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins axi_gpio_0/S_AXI]
+</axi_gpio_0/S_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x41200000[ 64K ]>
+report_ip_status -name ip_status 
+save_constraints
+save_bd_design
+Wrote  : <C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/lab8_part1.bd> 
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hdl/lab8_part1_wrapper.v" into library work [C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hdl/lab8_part1_wrapper.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hdl/lab8_part1.v" into library work [C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hdl/lab8_part1.v:1]
+ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source: 
+/UARTmodule2017winter_0/clock
+
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/lab8_part1.bd 
+WARNING: [Runs 36-53] Possible issues detected after target generation. Generation state is unexpected for target 'Implementation'. Expected 'Generated', got 'Stale' for source 'C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/lab8_part1.bd'
+[Tue Jan 09 18:56:15 2018] Launched synth_1...
+Run output will be captured here: C:/xup/embedded/lab8_part2/lab8_part2.runs/synth_1/runme.log
+ERROR: [Common 17-39] 'launch_runs' failed due to earlier errors.
+connect_bd_net -net [get_bd_nets processing_system7_0_FCLK_CLK0] [get_bd_pins UARTmodule2017winter_0/clock] [get_bd_pins processing_system7_0/FCLK_CLK0]
+reset_run synth_1
+save_bd_design
+Wrote  : <C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/lab8_part1.bd> 
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hdl/lab8_part1_wrapper.v" into library work [C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hdl/lab8_part1_wrapper.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hdl/lab8_part1.v" into library work [C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hdl/lab8_part1.v:1]
+CRITICAL WARNING: [BD 41-1347] Reset pin /UARTmodule2017winter_0/reset (associated clock /UARTmodule2017winter_0/clock) is connected to asynchronous reset source /processing_system7_0/FCLK_RESET0_N.
+This may prevent design from meeting timing. Instead it should be connected to reset source /rst_processing_system7_0_100M/peripheral_aresetn.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. 
+Please check your design and connect them if needed: 
+/UARTmodule2017winter_0/read_from_uart
+
+Verilog Output written to : C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hdl/lab8_part1.v
+Verilog Output written to : C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hdl/lab8_part1_wrapper.v
+Wrote  : <C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/lab8_part1.bd> 
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'lab8_part1_processing_system7_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'lab8_part1_axi_gpio_1_0'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'lab8_part1_axi_gpio_1_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_1 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'lab8_part1_rst_processing_system7_0_100M_3'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'lab8_part1_rst_processing_system7_0_100M_3'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_100M .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'lab8_part1_xbar_3'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/xbar .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'lab8_part1_UARTmodule2017winter_0_1'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block UARTmodule2017winter_0 .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'lab8_part1_axi_gpio_0_1'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'lab8_part1_axi_gpio_0_1' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'lab8_part1_axi_gpio_0_1'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'lab8_part1_auto_pc_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1379] This design does not contain any processor.
+Exporting to file C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hw_handoff/lab8_part1.hwh
+Generated Block Design Tcl file C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hw_handoff/lab8_part1_bd.tcl
+Generated Hardware Definition File C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hdl/lab8_part1.hwdef
+INFO: [BD 41-1662] The design 'lab8_part1.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. 
+Please check your design and connect them if needed: 
+/UARTmodule2017winter_0/read_from_uart
+
+Verilog Output written to : C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hdl/lab8_part1.v
+Verilog Output written to : C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hdl/lab8_part1_wrapper.v
+Wrote  : <C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/lab8_part1.bd> 
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'lab8_part1_processing_system7_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'lab8_part1_axi_gpio_1_0'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'lab8_part1_axi_gpio_1_0'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'lab8_part1_axi_gpio_1_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_1 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'lab8_part1_rst_processing_system7_0_100M_3'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'lab8_part1_rst_processing_system7_0_100M_3'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'lab8_part1_rst_processing_system7_0_100M_3'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_100M .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'lab8_part1_xbar_3'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/xbar .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'lab8_part1_UARTmodule2017winter_0_1'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block UARTmodule2017winter_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'lab8_part1_axi_gpio_0_1'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'lab8_part1_axi_gpio_0_1'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'lab8_part1_axi_gpio_0_1'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'lab8_part1_auto_pc_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1379] This design does not contain any processor.
+Exporting to file C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hw_handoff/lab8_part1.hwh
+Generated Block Design Tcl file C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hw_handoff/lab8_part1_bd.tcl
+Generated Hardware Definition File C:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/hdl/lab8_part1.hwdef
+[Tue Jan 09 18:57:44 2018] Launched synth_1...
+Run output will be captured here: C:/xup/embedded/lab8_part2/lab8_part2.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2208.988 ; gain = 33.234
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/ip/lab8_part1_processing_system7_0_0/lab8_part1_processing_system7_0_0.xdc] for cell 'lab8_part1_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/ip/lab8_part1_processing_system7_0_0/lab8_part1_processing_system7_0_0.xdc] for cell 'lab8_part1_i/processing_system7_0/inst'
+Parsing XDC File [c:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/ip/lab8_part1_axi_gpio_1_0/lab8_part1_axi_gpio_1_0_board.xdc] for cell 'lab8_part1_i/axi_gpio_1/U0'
+Finished Parsing XDC File [c:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/ip/lab8_part1_axi_gpio_1_0/lab8_part1_axi_gpio_1_0_board.xdc] for cell 'lab8_part1_i/axi_gpio_1/U0'
+Parsing XDC File [c:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/ip/lab8_part1_axi_gpio_1_0/lab8_part1_axi_gpio_1_0.xdc] for cell 'lab8_part1_i/axi_gpio_1/U0'
+Finished Parsing XDC File [c:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/ip/lab8_part1_axi_gpio_1_0/lab8_part1_axi_gpio_1_0.xdc] for cell 'lab8_part1_i/axi_gpio_1/U0'
+Parsing XDC File [c:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/ip/lab8_part1_rst_processing_system7_0_100M_3/lab8_part1_rst_processing_system7_0_100M_3_board.xdc] for cell 'lab8_part1_i/rst_processing_system7_0_100M'
+Finished Parsing XDC File [c:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/ip/lab8_part1_rst_processing_system7_0_100M_3/lab8_part1_rst_processing_system7_0_100M_3_board.xdc] for cell 'lab8_part1_i/rst_processing_system7_0_100M'
+Parsing XDC File [c:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/ip/lab8_part1_rst_processing_system7_0_100M_3/lab8_part1_rst_processing_system7_0_100M_3.xdc] for cell 'lab8_part1_i/rst_processing_system7_0_100M'
+Finished Parsing XDC File [c:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/ip/lab8_part1_rst_processing_system7_0_100M_3/lab8_part1_rst_processing_system7_0_100M_3.xdc] for cell 'lab8_part1_i/rst_processing_system7_0_100M'
+Parsing XDC File [c:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/ip/lab8_part1_axi_gpio_0_1/lab8_part1_axi_gpio_0_1_board.xdc] for cell 'lab8_part1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/ip/lab8_part1_axi_gpio_0_1/lab8_part1_axi_gpio_0_1_board.xdc] for cell 'lab8_part1_i/axi_gpio_0/U0'
+Parsing XDC File [c:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/ip/lab8_part1_axi_gpio_0_1/lab8_part1_axi_gpio_0_1.xdc] for cell 'lab8_part1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/xup/embedded/lab8_part2/lab8_part2.srcs/sources_1/bd/lab8_part1/ip/lab8_part1_axi_gpio_0_1/lab8_part1_axi_gpio_0_1.xdc] for cell 'lab8_part1_i/axi_gpio_0/U0'
+Parsing XDC File [C:/xup/embedded/lab8_part2/lab8_part2.srcs/constrs_1/new/lab8Constrian.xdc]
+Finished Parsing XDC File [C:/xup/embedded/lab8_part2/lab8_part2.srcs/constrs_1/new/lab8Constrian.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2208.988 ; gain = 0.000
+place_ports {transmitted_bits_1[3]} D18
+place_ports {transmitted_bits_1[2]} G14
+place_ports {transmitted_bits_1[1]} M15
+place_ports {transmitted_bits_1[0]} M14
+set_property IOSTANDARD LVCMOS33 [get_ports [list {transmitted_bits_1[3]} {transmitted_bits_1[2]} {transmitted_bits_1[1]} {transmitted_bits_1[0]}]]
+place_ports rx W15
+place_ports tx V15
+set_property IOSTANDARD LVCMOS33 [get_ports [list rx]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list tx]]
+save_constraints
+ERROR: [#UNDEF] The hardware handoff file(.sysdef) does not exist. It may not have generated because 
+ 1. Bitstream might nothave generated. Generate bitstream and export otherwise do not include bitstream in export. 
+ 2. There are no IPI design hardware handoff files. Check the log messages for more details 
+ERROR: [#UNDEF] The hardware handoff file(.sysdef) does not exist. It may not have generated because 
+ 1. Bitstream might nothave generated. Generate bitstream and export otherwise do not include bitstream in export. 
+ 2. There are no IPI design hardware handoff files. Check the log messages for more details 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.259 . Memory (MB): peak = 2222.652 ; gain = 0.000
+[Tue Jan 09 19:01:57 2018] Launched impl_1...
+Run output will be captured here: C:/xup/embedded/lab8_part2/lab8_part2.runs/impl_1/runme.log
+file copy -force C:/xup/embedded/lab8_part2/lab8_part2.runs/impl_1/lab8_part1_wrapper.sysdef C:/xup/embedded/lab8_part2/lab8_part2.sdk/lab8_part1_wrapper.hdf
+
+launch_sdk -workspace C:/xup/embedded/lab8_part2/lab8_part2.sdk -hwspec C:/xup/embedded/lab8_part2/lab8_part2.sdk/lab8_part1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/xup/embedded/lab8_part2/lab8_part2.sdk -hwspec C:/xup/embedded/lab8_part2/lab8_part2.sdk/lab8_part1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+current_project UARTmodule2017Real
+close_project
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/xup/embedded/UARTmodule2017Real/UARTmodule2017Real.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Tue Jan 09 19:04:49 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Jan 09 19:04:49 2018...
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 09 19:04:56 2018...

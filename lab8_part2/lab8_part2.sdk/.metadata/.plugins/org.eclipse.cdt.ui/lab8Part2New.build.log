@@ -1,0 +1,35 @@
+20:06:46 **** Auto Build of configuration Debug for project lab8Part2New ****
+make all 
+'Building file: ../src/lab8part2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab8part2.o" -I../../lab8Part2New_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab8part2.d" -MT"src/lab8part2.d" -o "src/lab8part2.o" "../src/lab8part2.c"
+../src/lab8part2.c: In function 'main':
+../src/lab8part2.c:92:3: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+   delay();
+   ^
+../src/lab8part2.c:70:6: warning: variable 'StatusB' set but not used [-Wunused-but-set-variable]
+  int StatusB;
+      ^
+../src/lab8part2.c: At top level:
+../src/lab8part2.c:108:6: warning: conflicting types for 'delay'
+ void delay() {
+      ^
+../src/lab8part2.c:92:3: note: previous implicit declaration of 'delay' was here
+   delay();
+   ^
+'Finished building: ../src/lab8part2.c'
+' '
+'Building target: lab8Part2New.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab8Part2New_bsp/ps7_cortexa9_0/lib -o "lab8Part2New.elf"  ./src/lab8part2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab8Part2New.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size lab8Part2New.elf  |tee "lab8Part2New.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82408	   2376	  22892	 107676	  1a49c	lab8Part2New.elf
+'Finished building: lab8Part2New.elf.size'
+' '
+
+20:06:46 Build Finished (took 535ms)
+

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1513795080">
+  <File Type="OPT-DCP" Name="uartTestece530winter2017_opt.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="uartTestece530winter2017_postroute_physopt.dcp"/>
+  <File Type="PA-DCP" Name="uartTestece530winter2017.dcp"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="PWROPT-DCP" Name="uartTestece530winter2017_pwropt.dcp"/>
+  <File Type="ROUTE-DCP" Name="uartTestece530winter2017_routed.dcp"/>
+  <File Type="PA-TCL" Name="uartTestece530winter2017.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DRC" Name="uartTestece530winter2017_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="uartTestece530winter2017.hwdef"/>
+  <File Type="PWROPT-DRC" Name="uartTestece530winter2017_drc_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="uartTestece530winter2017_placed.dcp"/>
+  <File Type="PLACE-IO" Name="uartTestece530winter2017_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="uartTestece530winter2017_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="uartTestece530winter2017_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="uartTestece530winter2017_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="uartTestece530winter2017_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="uartTestece530winter2017_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="uartTestece530winter2017_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="uartTestece530winter2017_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="uartTestece530winter2017_physopt.dcp"/>
+  <File Type="RDI-RDI" Name="uartTestece530winter2017.vdi"/>
+  <File Type="PHYSOPT-DRC" Name="uartTestece530winter2017_drc_physopted.rpt"/>
+  <File Type="ROUTE-DRC" Name="uartTestece530winter2017_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="uartTestece530winter2017_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="uartTestece530winter2017_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="uartTestece530winter2017_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="uartTestece530winter2017_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="uartTestece530winter2017_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="uartTestece530winter2017_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="uartTestece530winter2017_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="uartTestece530winter2017_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="uartTestece530winter2017_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="uartTestece530winter2017_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="uartTestece530winter2017_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="uartTestece530winter2017_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="uartTestece530winter2017_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="uartTestece530winter2017.bit"/>
+  <File Type="BG-BIN" Name="uartTestece530winter2017.bin"/>
+  <File Type="BITSTR-MSK" Name="uartTestece530winter2017.msk"/>
+  <File Type="BITSTR-RBT" Name="uartTestece530winter2017.rbt"/>
+  <File Type="BITSTR-NKY" Name="uartTestece530winter2017.nky"/>
+  <File Type="BITSTR-BMM" Name="uartTestece530winter2017_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="uartTestece530winter2017.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="uartTestece530winter2017.sysdef"/>
+  <File Type="BG-BGN" Name="uartTestece530winter2017.bgn"/>
+  <File Type="BG-DRC" Name="uartTestece530winter2017.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/lab7ece530winter2017zsy/DelayLoop.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/DelayLoop.v"/>
+        <Attr Name="ImportTime" Val="1513737293"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab7ece530winter2017zsy/kcuart_rx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/kcuart_rx.v"/>
+        <Attr Name="ImportTime" Val="1513737293"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab7ece530winter2017zsy/kcuart_tx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/kcuart_tx.v"/>
+        <Attr Name="ImportTime" Val="1513737293"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab7ece530winter2017zsy/bbfifo_16x8.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/bbfifo_16x8.v"/>
+        <Attr Name="ImportTime" Val="1513737293"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab7ece530winter2017zsy/DebouncerWithoutLatch.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/DebouncerWithoutLatch.v"/>
+        <Attr Name="ImportTime" Val="1513737293"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab7ece530winter2017zsy/uart_tx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/uart_tx.v"/>
+        <Attr Name="ImportTime" Val="1513737293"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab7ece530winter2017zsy/BaudRateGenerator.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/BaudRateGenerator.v"/>
+        <Attr Name="ImportTime" Val="1513737293"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab7ece530winter2017zsy/ClockedOneShot.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/ClockedOneShot.v"/>
+        <Attr Name="ImportTime" Val="1513737293"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab7ece530winter2017zsy/uart_rx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/uart_rx.v"/>
+        <Attr Name="ImportTime" Val="1513737293"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab7ece530winter2017zsy/uartTestece530winter2017.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/uartTestece530winter2017.v"/>
+        <Attr Name="ImportTime" Val="1513737293"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="uartTestece530winter2017"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/uartTestece530winter2017.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/uartTestece530winter2017.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

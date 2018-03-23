@@ -1,0 +1,397 @@
+14:03:11 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+14:03:13 INFO  : XSDB server has started successfully.
+14:03:13 INFO  : Processing command line option -hwspec C:/xup/embedded/2015_2_zynq_labs/lab1/lab1.sdk/system_wrapper.hdf.
+14:12:47 INFO  : ps7_init is completed.
+14:12:48 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:14:59 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+13:19:51 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+13:19:53 INFO  : XSDB server has started successfully.
+13:19:56 INFO  : Processing command line option -hwspec C:/xup/embedded/2015_2_zynq_labs/lab2/lab2.sdk/system_wrapper.hdf.
+13:23:27 INFO  : BSP Project P/standalone_bsp_0 has been successfully migrated.
+13:43:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:43:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+13:43:04 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab2/lab2.sdk/system_wrapper_hw_platform_1/system_wrapper.bit"
+13:43:40 INFO  : ps7_init is completed.
+13:43:40 INFO  : ps7_post_config is completed.
+13:43:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:59:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:05:35 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+22:44:20 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+22:44:22 INFO  : XSDB server has started successfully.
+22:44:23 INFO  : Processing command line option -hwspec C:/xup/embedded/2015_2_zynq_labs/lab2/lab2.sdk/system_wrapper.hdf.
+22:44:25 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_1.
+13:36:16 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+13:36:17 INFO  : XSDB server has started successfully.
+13:36:24 INFO  : Processing command line option -hwspec C:/xup/embedded/2015_2_zynq_labs/lab4/lab4.sdk/system_wrapper.hdf.
+13:52:13 INFO  : No changes in MSS file content so not generating sources.
+14:04:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:04:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+14:04:55 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab4/lab4.sdk/system_wrapper_hw_platform_2/system_wrapper.bit"
+14:05:14 INFO  : ps7_init is completed.
+14:05:14 INFO  : ps7_post_config is completed.
+14:05:14 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:05:48 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:09:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:09:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+14:09:35 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab4/lab4.sdk/system_wrapper_hw_platform_2/system_wrapper.bit"
+14:09:50 INFO  : ps7_init is completed.
+14:09:50 INFO  : ps7_post_config is completed.
+14:09:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:10:35 INFO  : Inferring section assignments and sizes from elf file: C:\xup\embedded\2015_2_zynq_labs\lab4\lab4.sdk\lab4\Debug\lab4.elf
+14:11:15 INFO  : Successfully generated C:\xup\embedded\2015_2_zynq_labs\lab4\lab4.sdk\lab4\src\lscript.ld.
+14:11:15 INFO  : Applying linker script to all configurations of project lab4.
+14:11:15 INFO  : Setting rebuild state to true for all configurations of project lab4.
+14:11:47 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:11:52 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:12:54 INFO  : Inferring section assignments and sizes from elf file: C:\xup\embedded\2015_2_zynq_labs\lab4\lab4.sdk\lab4\Debug\lab4.elf
+14:13:04 INFO  : Successfully generated C:\xup\embedded\2015_2_zynq_labs\lab4\lab4.sdk\lab4\src\lscript.ld.
+14:13:04 INFO  : Applying linker script to all configurations of project lab4.
+14:13:04 INFO  : Setting rebuild state to true for all configurations of project lab4.
+14:14:40 INFO  : Successfully generated C:\xup\embedded\2015_2_zynq_labs\lab4\lab4.sdk\lab4\src\lscript.ld.
+14:14:40 INFO  : Applying linker script to all configurations of project lab4.
+14:14:40 INFO  : Setting rebuild state to true for all configurations of project lab4.
+14:15:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:15:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+14:15:36 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab4/lab4.sdk/system_wrapper_hw_platform_2/system_wrapper.bit"
+14:15:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:15:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+14:15:54 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab4/lab4.sdk/system_wrapper_hw_platform_2/system_wrapper.bit"
+14:18:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:18:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+14:18:18 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab4/lab4.sdk/system_wrapper_hw_platform_2/system_wrapper.bit"
+14:19:53 INFO  : Successfully generated C:\xup\embedded\2015_2_zynq_labs\lab4\lab4.sdk\lab4\src\lscript.ld.
+14:19:53 INFO  : Applying linker script to all configurations of project lab4.
+14:19:53 INFO  : Setting rebuild state to true for all configurations of project lab4.
+14:20:12 INFO  : Inferring section assignments and sizes from elf file: C:\xup\embedded\2015_2_zynq_labs\lab4\lab4.sdk\lab4\Debug\lab4.elf
+14:20:21 INFO  : Successfully generated C:\xup\embedded\2015_2_zynq_labs\lab4\lab4.sdk\lab4\src\lscript.ld.
+14:20:21 INFO  : Applying linker script to all configurations of project lab4.
+14:20:21 INFO  : Setting rebuild state to true for all configurations of project lab4.
+14:42:58 INFO  : Successfully generated C:\xup\embedded\2015_2_zynq_labs\lab4\lab4.sdk\lab4\src\lscript.ld.
+14:42:58 INFO  : Applying linker script to all configurations of project lab4.
+14:42:58 INFO  : Setting rebuild state to true for all configurations of project lab4.
+15:28:41 INFO  : Successfully generated C:\xup\embedded\2015_2_zynq_labs\lab4\lab4.sdk\lab4\src\lscript.ld.
+15:28:41 INFO  : Applying linker script to all configurations of project lab4.
+15:28:41 INFO  : Setting rebuild state to true for all configurations of project lab4.
+15:30:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:30:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+15:30:53 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab4/lab4.sdk/system_wrapper_hw_platform_2/system_wrapper.bit"
+15:31:03 INFO  : ps7_init is completed.
+15:31:04 INFO  : ps7_post_config is completed.
+15:31:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:31:25 INFO  : Inferring section assignments and sizes from elf file: C:\xup\embedded\2015_2_zynq_labs\lab4\lab4.sdk\lab4\Debug\lab4.elf
+18:06:16 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+12:02:01 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+12:02:02 INFO  : Processing command line option -hwspec C:/xup/embedded/2015_2_zynq_labs/lab4/lab4.sdk/system_wrapper.hdf.
+12:02:03 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_2.
+12:02:03 INFO  : XSDB server has started successfully.
+12:02:34 INFO  : Inferring section assignments and sizes from elf file: C:\xup\embedded\2015_2_zynq_labs\lab4\lab4.sdk\lab4\Debug\lab4.elf
+10:59:54 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+10:59:56 INFO  : XSDB server has started successfully.
+10:59:56 INFO  : Processing command line option -hwspec C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper.hdf.
+11:47:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:47:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+11:47:40 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+11:48:03 INFO  : ps7_init is completed.
+11:48:04 INFO  : ps7_post_config is completed.
+11:48:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:52:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:52:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+11:52:11 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+11:52:23 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+11:52:34 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Unable to Stop Processor. System could be in unknown state.
+                     Please reset the system
+Unknown Error Occured
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(TM.java:757)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(CPURunSession.java:27)
+	at com.xilinx.sdk.targetmanager.internal.TM.terminateCurrentLaunch(TM.java:805)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:568)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+11:52:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:52:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+11:52:56 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+11:54:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:54:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+11:54:27 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+11:56:22 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:56:46 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+11:56:47 INFO  : XSDB server has started successfully.
+11:56:53 INFO  : Processing command line option -hwspec C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper.hdf.
+11:56:55 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_3.
+11:57:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:57:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+11:57:35 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+11:58:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:58:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+11:58:10 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+11:58:24 INFO  : ps7_init is completed.
+11:58:24 INFO  : ps7_post_config is completed.
+11:58:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:30:31 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+12:30:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:43:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:47:10 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:51:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:55:55 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:36:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:36:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+13:36:17 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+13:37:42 INFO  : ps7_init is completed.
+13:37:42 INFO  : ps7_post_config is completed.
+13:37:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:41:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:41:53 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:53:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:00:42 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+14:00:42 WARN  : Terminating existing sessions on processor ps7_cortexa9_0
+14:00:53 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+13:17:11 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+13:17:12 INFO  : Processing command line option -hwspec C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper.hdf.
+13:17:13 INFO  : XSDB server has started successfully.
+13:17:13 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_3.
+20:07:16 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+20:07:17 INFO  : XSDB server has started successfully.
+20:07:19 INFO  : Processing command line option -hwspec C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper.hdf.
+20:07:20 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_3.
+20:07:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:07:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+20:07:51 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+20:08:22 WARN  : Unable to obtain port 2350 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+20:08:28 INFO  : ps7_init is completed.
+20:08:28 INFO  : ps7_post_config is completed.
+20:08:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:09:38 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+20:17:46 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+20:17:47 INFO  : XSDB server has started successfully.
+20:17:49 INFO  : Processing command line option -hwspec C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper.hdf.
+20:17:50 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_3.
+20:17:51 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1513274786351,  Project:1512670871000
+20:17:51 INFO  : The hardware specification for project 'system_wrapper_hw_platform_3' is different from C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper.hdf.
+20:17:51 INFO  : Copied contents of C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_3\system.hdf.
+20:17:55 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+20:17:58 INFO  : 
+20:17:59 INFO  : Updating hardware inferred compiler options for lab5.
+20:17:59 INFO  : Clearing existing target manager status.
+20:18:10 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+20:18:30 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+20:18:32 INFO  : XSDB server has started successfully.
+20:18:33 INFO  : Processing command line option -hwspec C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper.hdf.
+20:18:34 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_3.
+20:19:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:19:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+20:19:23 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+20:19:32 INFO  : ps7_init is completed.
+20:19:32 INFO  : ps7_post_config is completed.
+20:19:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:13:42 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+12:13:43 INFO  : XSDB server has started successfully.
+12:13:44 INFO  : Processing command line option -hwspec C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper.hdf.
+12:13:44 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_3.
+12:13:46 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1513617198052,  Project:1513274786351
+12:13:46 INFO  : The hardware specification for project 'system_wrapper_hw_platform_3' is different from C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper.hdf.
+12:14:01 INFO  : Copied contents of C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_3\system.hdf.
+12:14:05 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+12:14:07 INFO  : 
+12:14:08 INFO  : Updating hardware inferred compiler options for lab5.
+12:14:08 INFO  : Clearing existing target manager status.
+12:14:22 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+12:20:56 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+12:20:57 INFO  : XSDB server has started successfully.
+12:20:58 INFO  : Processing command line option -hwspec C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper.hdf.
+12:20:59 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_3.
+12:21:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:21:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+12:21:27 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+12:21:37 WARN  : Unable to obtain port 2350 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+12:21:40 INFO  : ps7_init is completed.
+12:21:40 INFO  : ps7_post_config is completed.
+12:21:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:22:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:22:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+12:22:36 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+12:22:51 INFO  : ps7_init is completed.
+12:22:51 INFO  : ps7_post_config is completed.
+12:22:51 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:25:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:25:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+12:25:46 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+12:25:55 INFO  : ps7_init is completed.
+12:25:56 INFO  : ps7_post_config is completed.
+12:25:56 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:28:24 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+12:28:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:29:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:32:28 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+12:32:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:33:03 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:34:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:35:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:36:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:38:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:57:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:57:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+12:57:52 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+12:58:18 INFO  : ps7_init is completed.
+12:58:18 INFO  : ps7_post_config is completed.
+12:58:18 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:00:50 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+13:03:59 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+13:04:00 INFO  : XSDB server has started successfully.
+13:04:01 INFO  : Processing command line option -hwspec C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper.hdf.
+13:04:02 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_3.
+13:04:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:04:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+13:04:47 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+13:05:05 INFO  : System reset is completed.
+13:05:07 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+13:05:07 INFO  : ps7_init is completed.
+13:05:07 INFO  : ps7_post_config is completed.
+13:07:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:07:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+13:07:14 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+13:07:21 INFO  : System reset is completed.
+13:07:23 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+13:07:23 INFO  : ps7_init is completed.
+13:07:23 INFO  : ps7_post_config is completed.
+13:12:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:12:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+13:12:38 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+13:12:46 INFO  : System reset is completed.
+13:12:48 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+13:12:48 INFO  : ps7_init is completed.
+13:12:49 INFO  : ps7_post_config is completed.
+13:19:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:19:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+13:19:40 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+13:19:47 INFO  : System reset is completed.
+13:19:48 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+13:19:49 INFO  : ps7_init is completed.
+13:19:49 INFO  : ps7_post_config is completed.
+13:23:02 INFO  : System reset is completed.
+13:23:04 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+13:23:05 INFO  : ps7_init is completed.
+13:23:05 INFO  : ps7_post_config is completed.
+13:23:23 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:23:26 INFO  : System reset is completed.
+13:23:28 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+13:23:28 INFO  : ps7_init is completed.
+13:23:28 INFO  : ps7_post_config is completed.
+13:26:16 INFO  : System reset is completed.
+13:26:18 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+13:26:18 INFO  : ps7_init is completed.
+13:26:18 INFO  : ps7_post_config is completed.
+13:27:42 INFO  : System reset is completed.
+13:27:44 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+13:27:44 INFO  : ps7_init is completed.
+13:27:45 INFO  : ps7_post_config is completed.
+13:29:08 INFO  : System reset is completed.
+13:29:10 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+13:29:10 INFO  : ps7_init is completed.
+13:29:10 INFO  : ps7_post_config is completed.
+13:32:27 INFO  : System reset is completed.
+13:32:29 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+13:32:29 INFO  : ps7_init is completed.
+13:32:29 INFO  : ps7_post_config is completed.
+13:38:13 INFO  : System reset is completed.
+13:38:15 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+13:38:15 INFO  : ps7_init is completed.
+13:38:15 INFO  : ps7_post_config is completed.
+13:43:11 INFO  : System reset is completed.
+13:43:12 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+13:43:13 INFO  : ps7_init is completed.
+13:43:13 INFO  : ps7_post_config is completed.
+13:52:42 INFO  : System reset is completed.
+13:52:44 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+13:52:44 INFO  : ps7_init is completed.
+13:52:44 INFO  : ps7_post_config is completed.
+13:54:41 INFO  : System reset is completed.
+13:54:43 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+13:54:43 INFO  : ps7_init is completed.
+13:54:43 INFO  : ps7_post_config is completed.
+14:00:25 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:00:27 INFO  : System reset is completed.
+14:00:29 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+14:00:29 INFO  : ps7_init is completed.
+14:00:30 INFO  : ps7_post_config is completed.
+14:02:57 INFO  : System reset is completed.
+14:02:58 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+14:02:59 INFO  : ps7_init is completed.
+14:02:59 INFO  : ps7_post_config is completed.
+14:12:54 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:12:58 INFO  : System reset is completed.
+14:13:00 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+14:13:00 INFO  : ps7_init is completed.
+14:13:01 INFO  : ps7_post_config is completed.
+14:14:31 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:14:32 INFO  : System reset is completed.
+14:14:34 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+14:14:34 INFO  : ps7_init is completed.
+14:14:35 INFO  : ps7_post_config is completed.
+14:16:28 INFO  : System reset is completed.
+14:16:29 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+14:16:30 INFO  : ps7_init is completed.
+14:16:30 INFO  : ps7_post_config is completed.
+14:21:26 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:21:27 INFO  : System reset is completed.
+14:21:29 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+14:21:29 INFO  : ps7_init is completed.
+14:21:29 INFO  : ps7_post_config is completed.
+15:34:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:34:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+15:34:53 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+15:35:03 INFO  : System reset is completed.
+15:35:05 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+15:35:06 INFO  : ps7_init is completed.
+15:35:06 INFO  : ps7_post_config is completed.
+21:02:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:02:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758556A" && level==0} -index 1' command is executed.
+21:02:47 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+21:02:57 INFO  : System reset is completed.
+21:02:59 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+21:02:59 INFO  : ps7_init is completed.
+21:03:00 INFO  : ps7_post_config is completed.
+21:10:10 INFO  : System reset is completed.
+21:10:11 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+21:10:12 INFO  : ps7_init is completed.
+21:10:12 INFO  : ps7_post_config is completed.
+21:13:04 INFO  : System reset is completed.
+21:13:06 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+21:13:06 INFO  : ps7_init is completed.
+21:13:06 INFO  : ps7_post_config is completed.
+21:45:24 INFO  : System reset is completed.
+21:45:26 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+21:45:27 INFO  : ps7_init is completed.
+21:45:27 INFO  : ps7_post_config is completed.
+21:50:30 INFO  : System reset is completed.
+21:50:31 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+21:50:32 INFO  : ps7_init is completed.
+21:50:32 INFO  : ps7_post_config is completed.
+21:55:35 INFO  : System reset is completed.
+21:55:37 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+21:55:37 INFO  : ps7_init is completed.
+21:55:37 INFO  : ps7_post_config is completed.
+21:56:51 INFO  : System reset is completed.
+21:56:53 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+21:56:53 INFO  : ps7_init is completed.
+21:56:54 INFO  : ps7_post_config is completed.
+22:05:17 INFO  : System reset is completed.
+22:05:18 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+22:05:19 INFO  : ps7_init is completed.
+22:05:19 INFO  : ps7_post_config is completed.
+22:11:34 INFO  : System reset is completed.
+22:11:35 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+22:11:36 INFO  : ps7_init is completed.
+22:11:36 INFO  : ps7_post_config is completed.
+22:22:05 INFO  : System reset is completed.
+22:22:06 INFO  : FPGA configured successfully with bitstream "C:/xup/embedded/2015_2_zynq_labs/lab5/lab5.sdk/system_wrapper_hw_platform_3/system_wrapper.bit"
+22:22:07 INFO  : ps7_init is completed.
+22:22:07 INFO  : ps7_post_config is completed.
+23:18:56 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

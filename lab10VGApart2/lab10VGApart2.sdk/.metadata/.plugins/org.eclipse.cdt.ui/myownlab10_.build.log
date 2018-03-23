@@ -1,0 +1,40 @@
+18:46:05 **** Build of configuration Debug for project myownlab10_ ****
+make all 
+'Building file: ../src/display_ctrl.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_ctrl.o" -I../../myownlab10__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_ctrl.d" -MT"src/display_ctrl.d" -o "src/display_ctrl.o" "../src/display_ctrl.c"
+'Finished building: ../src/display_ctrl.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../myownlab10__bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DisplayDemoInitialize':
+../src/main.c:69:2: warning: passing argument 5 of 'DisplayImage' discards 'const' qualifier from pointer target type
+  DisplayImage(dispPtr->framePtr[dispPtr->curFrame], dispPtr->vMode.width, dispPtr->vMode.height, dispPtr->stride, image);
+  ^
+../src/main.c:27:6: note: expected 'u32 *' but argument is of type 'const u32 *'
+ void DisplayImage(u32 *frame, u32 width, u32 height, u32 stride, u32 img[]);
+      ^
+../src/main.c: In function 'DisplayDemoRun':
+../src/main.c:107:4: warning: passing argument 5 of 'DisplayImage' discards 'const' qualifier from pointer target type
+    DisplayImage(dispPtr->framePtr[dispPtr->curFrame], dispPtr->vMode.width, dispPtr->vMode.height, dispPtr->stride, image);
+    ^
+../src/main.c:27:6: note: expected 'u32 *' but argument is of type 'const u32 *'
+ void DisplayImage(u32 *frame, u32 width, u32 height, u32 stride, u32 img[]);
+      ^
+'Finished building: ../src/main.c'
+' '
+'Building target: myownlab10_.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../myownlab10__bsp/ps7_cortexa9_0/lib -o "myownlab10_.elf"  ./src/display_ctrl.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `DisplayDemoInitialize':
+C:\xup\embedded\lab10VGApart2\lab10VGApart2.sdk\myownlab10_\Debug/../src/main.c:69: undefined reference to `image'
+C:\xup\embedded\lab10VGApart2\lab10VGApart2.sdk\myownlab10_\Debug/../src/main.c:69: undefined reference to `image'
+./src/main.o: In function `DisplayDemoRun':
+C:\xup\embedded\lab10VGApart2\lab10VGApart2.sdk\myownlab10_\Debug/../src/main.c:107: undefined reference to `image'
+C:\xup\embedded\lab10VGApart2\lab10VGApart2.sdk\myownlab10_\Debug/../src/main.c:107: undefined reference to `image'
+collect2.exe: error: ld returned 1 exit status
+make: *** [myownlab10_.elf] Error 1
+
+18:46:06 Build Finished (took 907ms)
+

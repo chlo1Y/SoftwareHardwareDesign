@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Webtalk v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# 
+# Start of session at: Mon Dec 18 13:03:44 2017
+# Process ID: 5292
+# Log file: C:/xup/embedded/2015_2_zynq_labs/lab6_2/lab6_2.sdk/webtalk/webtalk.log
+# Journal file: C:/xup/embedded/2015_2_zynq_labs/lab6_2/lab6_2.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

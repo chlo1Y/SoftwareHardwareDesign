@@ -1,0 +1,3 @@
+set_property SRC_FILE_INFO {cfile:c:/xup/embedded/zynq_interrupts/zynq_interrupts.srcs/sources_1/bd/zynq_interupt_system/ip/zynq_interupt_system_processing_system7_0_1/zynq_interupt_system_processing_system7_0_1.xdc rfile:../../../zynq_interrupts.srcs/sources_1/bd/zynq_interupt_system/ip/zynq_interupt_system_processing_system7_0_1/zynq_interupt_system_processing_system7_0_1.xdc id:1 order:EARLY scoped_inst:zynq_interupt_system_i/processing_system7_0/inst} [current_design]
+set_property src_info {type:SCOPED_XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
+set_input_jitter clk_fpga_0 0.3
